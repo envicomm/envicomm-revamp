@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         midgreen: '#8CBF3F',
-        lightgreen: '#BBD979'
+        lightgreen: '#BBD979',
+        darkgreen: '#547326',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

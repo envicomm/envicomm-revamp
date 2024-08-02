@@ -14,10 +14,10 @@ function Nav() {
 			</svg>
 		</div>
 		<div class="order-3 w-full md:w-auto md:order-2">
-			<ul class="flex font-semibold justify-between text-white hover:transform-underline">
-				<li class="md:px-4 md:py-2 "><a href="#">Home</a></li>
-				<li class="md:px-4 md:py-2 "><a href="#">About</a></li>
-				<li class="md:px-4 md:py-2 "><a href="#">Services</a></li>
+			<ul class="flex  justify-between text-white hover:transform-underline">
+				<li class="md:px-4 font-serif md:py-2 "><a href="#">Home</a></li>
+				<li class="md:px-4 font-serif md:py-2 "><a href="#">About</a></li>
+				<li class="md:px-4 font-serif md:py-2 "><a href="#">Services</a></li>
 			</ul>
 		</div>
 		<div class="order-2 md:order-3">
