@@ -1,7 +1,6 @@
 import { useState } from 'react'
-
 import './App.css'
-import Home from './components/Home'
+import Contact from './components/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,9 +8,9 @@ function App() {
   return (
   
       <div>
+   
+          <Contact/>
 
-          <Home/>
-          
       </div>
     
   
