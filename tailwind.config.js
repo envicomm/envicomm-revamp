@@ -13,8 +13,13 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
+      backgroundImage: {
+        'forest': "url('/src/assets/forest.png')",
+        'services': "url('/src/assets/services.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
