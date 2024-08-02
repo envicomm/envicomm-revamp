@@ -14,7 +14,7 @@ function ContactUs() {
                     <div className="flex flex-cols space-x-24 h-full">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3478823166267!2d123.89909731526492!3d10.325251992617169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99e6d322e3a3d%3A0x2d6a84a3d080bd55!2sAdlawon%20Corporate%20Center!5e0!3m2!1sen!2sph!4v1603681302381!5m2!1sen!2sph"
-                            className="w-[595px] h-[660px] border-0 rounded-lg"
+                            className="w-[595px] h-[660px] border-0 rounded-lg shadow-lg"
                             allowFullScreen=""
                             aria-hidden="false"
                             tabIndex="0"
@@ -48,8 +48,9 @@ function ContactUs() {
 
             </div>
 
-            <div className=' w-full max-w-4xl mx-auto p-4 rounded-lg shadow-md'>
-                <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-center pt-[50px] lg:pt-[169px] text-black">Write a Message</h3>
+            <div className='  max-w-4xl mx-auto p-4 rounded-lg shadow-md pt-[150px] '>
+                <h1 className='text-normal font-normal mb-4 text-center text-black'>Contact us now!</h1>
+                <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-center text-black">Write a Message</h3>
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="mb-4 text-black">
                         <input
@@ -79,7 +80,7 @@ function ContactUs() {
                         ></textarea>
                     </div>
                     <div className="mb-4 col-span-1 md:col-span-2 flex justify-center">
-                        <button type="submit" className="p-3 rounded bg-green-600 text-white">
+                        <button type="submit" className="p-3 rounded bg-[#547326] text-white">
                             Send Message
                         </button>
                     </div>
