@@ -10,7 +10,14 @@ export default {
         backgroundImage:{
           'custom-image': "url('../assets/homebg.jpg')"
         }
-      }
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
 
   },
