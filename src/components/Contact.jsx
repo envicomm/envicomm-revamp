@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import Footer from './Footer';
 
 function ContactUs() {
     return (
@@ -86,6 +87,7 @@ function ContactUs() {
                     </div>
                 </form>
             </div>
+            <Footer/>
         </div>
     );
 };
