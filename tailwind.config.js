@@ -10,6 +10,7 @@ export default {
         midgreen: '#8CBF3F',
         lightgreen: '#BBD979'
       },
+      
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
