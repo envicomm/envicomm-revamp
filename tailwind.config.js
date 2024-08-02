@@ -6,21 +6,21 @@ export default {
   ],
   theme: {
     extend: {
-      extend:{
-        backgroundImage:{
-          'custom-image': "url('../assets/homebg.jpg')"
-        }
+      colors: {
+        midgreen: '#8CBF3F',
+        lightgreen: '#BBD979'
       },
-      lineHeight: {
-        'extra-loose': '2.5',
-        '12': '3rem',
-      },
+      
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
+      },
+      backgroundImage: {
+        'forest': "url('/src/assets/forest.png')",
+        'services': "url('/src/assets/services.jpg')",
       },
     },
-
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
