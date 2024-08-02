@@ -1,33 +1,41 @@
 import React from 'react';
-import footerImage from '../assets/footer.png'; // Import the footer image
+import footer from '../assets/footer.png'
 
 function Footer() {
-  return (
-    <footer
-      className="text-white py-6"
-      style={{
-        backgroundImage: `url(${footerImage})`,
-        backgroundSize: 'cover', // Adjust background size
-        backgroundPosition: 'center', // Adjust background position
-        backgroundRepeat: 'no-repeat', // Ensure background does not repeat
-        height: '500px', // Adjust the height of the footer
-        filter: 'hue-rotate(-20deg)' // Adjust the hue as needed
-      }}
-    >
-      <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center">
-        <h2 className="text-2xl font-bold">ENVI-COMM CORPORATION</h2>
-        <p className="text-sm">© 2024 ENVI-COMM CORPORATION. All rights reserved.</p>
-        <div className="mt-4">
-          <a href="#" className="text-white hover:text-lightgreen mx-2">Privacy Policy</a>
-          <a href="#" className="text-white hover:text-lightgreen mx-2">About Us</a>
-          <a href="#" className="text-white hover:text-lightgreen mx-2">Home</a>
-          
-          <a href="#" className="text-white hover:text-lightgreen mx-2">Terms of Service</a>
-          <a href="#" className="text-white hover:text-lightgreen mx-2">Contact Us</a>
-        </div>
-      </div>
-    </footer>
-  );
+    return (
+        <footer
+            className="w-full  h-[448px] flex flex-col justify-between items-center p-8 text-white pt-[50px] bg-cover bg-center"
+            style={{ backgroundImage: "url('src/assets/footer.png')" }}
+        >
+            <div className="w-full flex flex-col items-center">
+                <div className="text-lg font-bold mb-4">ENV-COMM CORPORATION</div>
+                <div className="flex justify-center space-x-8">
+                    <div className="flex flex-col text-center">
+                        <div className="font-semibold mb-2">Category</div>
+                        <a href="#" className="hover:underline">Home</a>
+                        <a href="#" className="hover:underline">About</a>
+                        <a href="#" className="hover:underline">Services</a>
+                        <a href="#" className="hover:underline">Contact</a>
+                    </div>
+                    <div className="flex flex-col text-center">
+                        <div className="font-semibold mb-2">Services</div>
+                        <a href="#" className="hover:underline">Applications</a>
+                        <a href="#" className="hover:underline">Planning</a>
+                        <a href="#" className="hover:underline">Reporting</a>
+                        <a href="#" className="hover:underline">Consultancy</a>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full flex justify-between items-center mt-4">
+                <div>2023 All rights reserved</div>
+                <div className="flex space-x-4">
+                    <a href="#" className="hover:underline">Privacy policy</a>
+                    <a href="#" className="hover:underline">Terms of service</a>
+                </div>
+            </div>
+        </footer>
+    );
 }
 
-export default Footer;
+
+export default Footer;  

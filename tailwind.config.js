@@ -11,11 +11,17 @@ export default {
         lightgreen: '#BBD979',
         darkgreen: '#547326',
       },
+      
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
+      backgroundImage: {
+        'forest': "url('/src/assets/forest.png')",
+        'services': "url('/src/assets/services.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
