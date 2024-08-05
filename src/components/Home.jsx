@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function Home() {
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden w-screen">
             <div
                 className="h-[93vh] w-full relative"
                 style={{ backgroundImage: `url(${homebg2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -25,7 +25,7 @@ function Home() {
                     </button>
                 </div>
             </div>
-            <div className="h-[50vh] w-full flex items-center justify-center flex-col space-y-8">
+            <div className="h-[50vh] w-full flex items-center justify-center flex-col space-y-8 bg-slate-50">
                 <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-serif text-midgreen">
                     Compliance, Community and Commitment
                 </h1>

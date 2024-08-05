@@ -18,6 +18,9 @@ export default {
       backgroundImage: {
         'forest': "url('/src/assets/forest.png')",
         'services': "url('/src/assets/services.jpg')",
+        'aboutbg' : "url('/src/assets/aboutbg.jpg')",
+        'homebg'  : "url('/src/assets/homebg.jpg')",
+        'project1' : "url('/src/assets/project1.jpg')",
       },
     },
   },

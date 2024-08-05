@@ -1,10 +1,12 @@
 import React from 'react'
 import homebg from '../assets/homebg.jpg'
+import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 
 
 function Services() {
   return (
+    <>
     <div className='w-screen flex flex-col text-center justify-center'>
         <div className='relative bg-services h-[600px] bg-cover bg-center flex items-center'> 
 
@@ -85,6 +87,8 @@ function Services() {
         </div>
 
     </div>
+    <Footer/>
+    </>
   )
 }
 
