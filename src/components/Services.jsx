@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Services() {
   return (
     <>
-    <div className='w-screen flex flex-col text-center justify-center'>
+    <div className='w-screen flex flex-col text-center justify-center pb-36'>
         <div className='relative bg-services h-[600px] bg-cover bg-center flex items-center'> 
 
         {/* breacrumbs */}
@@ -45,7 +45,9 @@ function Services() {
                             Application
                         </h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellat exercitationem ea, eaque quis vel ullam suscipit sapiente libero, at itaque illo tempore quod inventore nihil et nesciunt aut nam?</p>
-                        <button>BUTTON</button>
+                        <Link to="/services/application" className='bg-midgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block text-center'>
+                                Click Here
+                        </Link>
                     </div>
                     <img className="h-[300px] w-[300px]  rounded-tl-full rounded-negative " src={homebg} alt='Logo'/>
                 </div>
@@ -54,20 +56,24 @@ function Services() {
                     <img className="h-[300px] w-[300px] rounded-tr-full " src={homebg} alt='Logo'/>
                         <div className='max-w-prose w-[400px] space-y-5'> 
                             <h1>
-                                Application
+                                Planning
                             </h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellat exercitationem ea, eaque quis vel ullam suscipit sapiente libero, at itaque illo tempore quod inventore nihil et nesciunt aut nam?</p>
-                            <button>BUTTON</button>
+                            <Link to="/services/planning" className='bg-midgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block text-center'>
+                                Click Here
+                            </Link>
                         </div>
                 </div>
 
                 <div className='flex items-center gap-4'>
                     <div className='max-w-prose w-[400px] space-y-5'>         
                         <h1>
-                            Application
+                            Reporting
                         </h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellat exercitationem ea, eaque quis vel ullam suscipit sapiente libero, at itaque illo tempore quod inventore nihil et nesciunt aut nam?</p>
-                        <button>BUTTON</button>
+                        <Link to="/services/reporting" className='bg-midgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block text-center'>
+                            Click Here
+                        </Link>
                     </div>
                         <img className="h-[300px] w-[300px] rounded-bl-full " src={homebg} alt='Logo'/>
                 </div>
@@ -76,10 +82,12 @@ function Services() {
                     <img className="h-[300px] w-[300px] rounded-br-full " src={homebg} alt='Logo'/>
                         <div className='max-w-prose w-[400px] space-y-5'> 
                             <h1>
-                                Application
+                                Consultancy
                             </h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repellat exercitationem ea, eaque quis vel ullam suscipit sapiente libero, at itaque illo tempore quod inventore nihil et nesciunt aut nam?</p>
-                            <button>BUTTON</button>
+                            <Link to="/services/consultancy" className='bg-midgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block text-center'>
+                                Click Here
+                            </Link>
                         </div>
                 </div>
             </div>
