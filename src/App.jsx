@@ -6,6 +6,10 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Services from "./components/Services";
 import Home from "./components/Home";
+import Application from "./components/Application"
+import Consultancy from "./components/Consultancy"
+import Planning from "./components/Planning";
+import Reporting from "./components/Reporting";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +22,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/application" element={<Application />} />
+          <Route path="/services/consultancy" element={<Consultancy />} />
+          <Route path="/services/planning" element={<Planning />} />
+          <Route path="/services/reporting" element={<Reporting />} />
         </Routes>
       </div>
     </Router>
