@@ -15,7 +15,7 @@ function Footer() {
                     </div>
                     <div className="flex flex-col text-center p-4">
                         <div className="font-semibold mb-2">Category</div>
-                        <a href="#" className="hover:underline">Home</a>
+                        <a href="/" className="hover:underline">Home</a>
                         <a href="#" className="hover:underline">About</a>
                         <a href="#" className="hover:underline">Services</a>
                         <a href="#" className="hover:underline">Contact</a>
