@@ -19,6 +19,7 @@ function Nav() {
 				<li class="md:px-4 md:py-2 "><Link to="/">Home</Link></li>
 				<li class="md:px-4 md:py-2 "><Link to="/About">About</Link></li>
 				<li class="md:px-4 md:py-2 "><Link to="/Services">Services</Link></li>
+				<li class="md:px-4 md:py-2 "><Link to="/Contact">Contact Us</Link> </li>
 			</ul>
 		</div>
 		<div class="order-2 md:order-3">
