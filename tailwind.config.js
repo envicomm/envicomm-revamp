@@ -21,6 +21,7 @@ export default {
         'aboutbg' : "url('/src/assets/aboutbg.jpg')",
         'homebg'  : "url('/src/assets/homebg.jpg')",
         'project1' : "url('/src/assets/project1.jpg')",
+        'footer' : "url('/src/assets/footer.png')",
       },
     },
   },

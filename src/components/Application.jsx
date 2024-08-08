@@ -1,33 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
+import Footer from './Footer'
 
 function Application() {
     return (
         <div className='min-h-screen flex flex-col text-center justify-center'>
-            <div className='relative bg-services w-screen h-[600px] bg-cover bg-center flex items-center'>
-                {/* breacrumbs */}
-                <nav aria-label="breadcrumb" className='absolute top-[200px] left-[200px] z-10'>
-                    <ol className="flex space-x-2 text-gray-500">
-                        <li>
-                            <Link to="/" className='text-white hover:text-slate-500'>Home</Link>
-                        </li>
-                        <li>-</li>
-                        <li>
-                            <Link to="/Services" className={`text-white hover:text-slate-500 ${location.pathname === '/Services' ? 'underline' : ""}`}>Services</Link>
-                        </li>
-                        <li>-</li>
-                        <li>
-                            <Link to="/services/application" className={`text-white hover:text-slate-500 ${location.pathname === '/services/application' ? 'underline' : ""}`}>Application</Link>
-                        </li>
-                    </ol>
-                </nav>
-                {/* end of breadcrumbs */}
-                <h1 className='flex items-center ml-[200px] drop-shadow-lg text-extrabold text-white font-sans text-9xl'>
-                    SERVICES
+            <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center'> 
+
+            {/* Breadcrumbs */}
+            <nav aria-label="breadcrumb" className='lg:mx-40 mx-5 '>
+                <ol className="flex space-x-2 text-gray-500">
+                    <li>
+                    <Link to="/" className='text-white hover:text-slate-500'>Home</Link>
+                    </li>
+                    <li>-</li>
+                    <li>
+                    <Link to="/Services" className={`text-white hover:text-slate-500 ${location.pathname === '/Services' ? 'underline' : ""}`}>Services</Link>
+                    </li>
+                </ol>
+            </nav>
+            {/* End of Breadcrumbs */}
+
+                <h1 className='lg:mx-40 mx-5 drop-shadow-lg text-extrabold text-white font-sans text-5xl md:text-7xl lg:text-9xl '>
+                SERVICES
                 </h1>
-
-
             </div>
             <ol>
 
@@ -36,7 +33,7 @@ function Application() {
                 <div className='pt-[32px] pl-[174px]'>
                     <Link
                         to="/services"
-                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block w-[124px] h-[40px] text-[12px] items-center justify-center'>
+                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
                         <ArrowLeft />Back
                     </Link>
                 </div>
@@ -155,9 +152,6 @@ function Application() {
                         </table>
                     </div>
                 </div>
-
-               
-
             </div>
            
         </div>
