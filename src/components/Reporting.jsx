@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
+import Footer from './Footer'
 
 function Application() {
     return (
@@ -76,7 +77,7 @@ function Application() {
                     </div>
                    
                 </div>  
-
+          
             </div>
 
         </div>

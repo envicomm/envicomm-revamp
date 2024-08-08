@@ -10,11 +10,13 @@ import Application from "./components/Application"
 import Consultancy from "./components/Consultancy"
 import Planning from "./components/Planning";
 import Reporting from "./components/Reporting";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <>
     <Router>
       <div>
         <Nav />
@@ -30,6 +32,8 @@ function App() {
     
       </div>
     </Router>
+    <Footer />
+    </>
   );
 }
 

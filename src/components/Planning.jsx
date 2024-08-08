@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
+import Footer from './Footer'
 
 function Application() {
     return (
-        <div className='min-h-screen flex flex-col text-center justify-center'>
+        <>
+        <div className='w-full flex flex-col text-center justify-center'>
             <div className='relative bg-services w-screen h-[600px] bg-cover bg-center flex items-center overflow-hidden'>
                 {/* breacrumbs */}
                 <nav aria-label="breadcrumb" className='absolute top-[200px] left-[200px] z-10'>
@@ -36,7 +38,7 @@ function Application() {
                 <div className='pt-[32px] pl-[174px]'>
                     <Link
                         to="/services"
-                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg inline-block w-[124px] h-[40px] text-[12px] items-center justify-center'>
+                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
                         <ArrowLeft />Back
                     </Link>
                 </div>
@@ -156,6 +158,8 @@ function Application() {
             </div>
 
         </div>
+        
+        </>
     )
 }
 
