@@ -4,39 +4,38 @@ import Cards from "../components/Cards";
 import Projects from "../components/Projects";
 import Carousel from "../components/Carousel";
 import Leaf from "../assets/Leaf.png";
-import Footer from "../components/Footer";
+
 
 function Home() {
     return (
-        <div className="overflow-x-hidden w-screen">
-            <div
-                className="h-[93vh] w-full relative"
-                style={{ backgroundImage: `url(${homebg2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-            >
-                <div className="bg-gradient-to-r from-white via-white h-full lg:w-2/3 md:w-4/5 sm:w-full flex flex-col items-center justify-center space-y-6 py-10 px-6 md:py-20 md:px-12">
+        <div className="w-full flex flex-col">
+            <div className="relative h-[93vh] w-full  bg-homebg2 bg-cover bg-center top-0">
+                <div className="bg-gradient-to-r from-white via-white h-full w-full sm:w-full md:w-4/5 lg:w-2/3 flex flex-col items-center justify-center space-y-6 py-10 px-6 md:py-20 md:px-12">
                     <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold font-sans text-center">
-                        ENVI-COMM CORPORATION
+                    ENVI-COMM CORPORATION
                     </h1>
                     <h2 className="text-green-900 text-center px-4 md:px-8 max-w-prose">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe minus vel aperiam consequatur labore veritatis alias quibusdam aut corporis, deleniti quae iste aspernatur ad, dolorem eligendi rerum nihil quis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe minus vel aperiam consequatur labore veritatis alias quibusdam aut corporis, deleniti quae iste aspernatur ad, dolorem eligendi rerum nihil quis.
                     </h2>
                     <button className="bg-green-900 text-white py-2 px-4 rounded-lg mt-4">
-                        Contact Us
+                    Contact Us
                     </button>
                 </div>
             </div>
-            <div className="h-[50vh] w-full flex items-center justify-center flex-col space-y-8 bg-slate-50 p-4">
+
+            <div className="lg:h-[50vh] h-screen w-full flex lg:items-center lg:justify-center flex-col space-y-8 bg-slate-50 p-8 lg:my-0">
                 <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-serif text-midgreen">
                     Compliance, Community and Commitment
                 </h1>
                 <p className="text-center max-w-prose">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam molestiae rem amet alias enim illo animi. Corrupti porro consectetur necessitatibus doloribus aliquam illo pariatur, magnam, voluptatum tempora unde quasi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium a unde veritatis neque sapiente, totam repudiandae porro aspernatur id! Voluptas nulla nihil ipsa consectetur odit nisi placeat amet, deleniti tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores ipsa saepe fugit quibusdam iure similique commodi quae id repudiandae praesentium totam eos maxime, doloribus amet laborum optio voluptatum est!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quaerat, cum excepturi deserunt fuga sint consequuntur labore, esse dolore voluptatem repudiandae nostrum atque tempora amet pariatur nobis eaque, nesciunt at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam deserunt omnis neque consectetur tenetur. Architecto dolore, distinctio beatae, in vitae provident doloremque rerum hic tempore reprehenderit animi, quasi quia nam.
                 </p>
             </div>
-            <Cards />
-            <Projects />
-            <Carousel />
-            <div className="h-[50vh] w-full flex items-center justify-center px-4">
+            <div>
+            < Cards />
+            </div>
+
+            <div className="sticky h-[50vh] bg-slate-50 w-full flex items-center justify-center px-4">
                 <div className="w-full h-full flex items-center justify-center">
                     <div className="bg-darkgreen rounded-lg flex flex-col md:flex-row items-center p-4 w-full max-w-4xl">
                         <div className="text-white text-center font-medium text-lg md:text-2xl lg:text-3xl mb-4 md:mb-0 md:pl-4">
@@ -58,7 +57,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

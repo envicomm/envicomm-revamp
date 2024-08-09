@@ -20,6 +20,7 @@ export default {
         'services': "url('/src/assets/services.jpg')",
         'aboutbg' : "url('/src/assets/aboutbg.jpg')",
         'homebg'  : "url('/src/assets/homebg.jpg')",
+        'homebg2' : "url('/src/assets/homebg2.jpg')",
         'project1' : "url('/src/assets/project1.jpg')",
         'footer' : "url('/src/assets/footer.png')",
       },

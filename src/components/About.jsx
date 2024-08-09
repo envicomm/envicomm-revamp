@@ -14,23 +14,22 @@ function About() {
   useEffect(() => {}, []);
 
   return (
-    <main ref={container} className="relative h-[300vh]">
+    <main ref={container} className="relative h-[400vh]">
       <Section1 scrollYProgress={scrollYProgress} />
       <Section2 scrollYProgress={scrollYProgress} />
       <Section3 scrollYProgress={scrollYProgress} />
-      <Section4 />
-      <Footer />
+      <Section4 scrollYProgress={scrollYProgress} />
+      
     </main>
   );
 }
 
 const Section1 = ({ scrollYProgress }) => {
-  const scale = useTransform(scrollYProgress, [0, 0.25], [1, 0.6]);
-  const rotate = useTransform(scrollYProgress, [0, 0.25], [0, -10]);
+  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [1, 1, 1, 1, 1]);
 
   return (
     <motion.div
-      style={{ scale, rotate }}
+      style={{ scale }}
       className="bg-homebg bg-cover bg-center bg-fixed h-screen flex items-center sticky top-0"
     >
       {/* breadcrumbs */}
@@ -74,12 +73,11 @@ const Section1 = ({ scrollYProgress }) => {
 };
 
 const Section2 = ({ scrollYProgress }) => {
-  const rotate = useTransform(scrollYProgress, [0.25, 0.35, 0.65, 0.8, 1], [0, 0, 0, 0, 0]);
-  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [0.8, 1, 1, 0.8, 0.6]);
+  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [1, 1, 1, 1, 1]);
 
   return (
     <motion.div
-      style={{ scale, rotate }}
+      style={{ scale }}
       className="sticky bg-project1 h-screen bg-cover bg-center flex items-center top-0"
     >
       <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold text-white">
@@ -90,13 +88,12 @@ const Section2 = ({ scrollYProgress }) => {
 };
 
 const Section3 = ({ scrollYProgress }) => {
-  const rotate = useTransform(scrollYProgress, [0.25, 0.35, 0.65, 0.8, 1], [20, 0, 0, 0, 0]);
-  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [0.8, 0.8, 1, 1, 1]);
+  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [1, 1, 1, 1, 1]);
 
   return (
     <motion.div
-      style={{ scale, rotate }}
-      className="sticky bg-services h-screen bg-cover bg-center flex items-center"
+      style={{ scale}}
+      className="sticky bg-services h-screen bg-cover bg-center flex items-center top-0"
     >
       <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold text-white">
         VISION
@@ -105,14 +102,18 @@ const Section3 = ({ scrollYProgress }) => {
   );
 };
 
-const Section4 = () => {
-  return (
-    <div className="h-screen flex items-center justify-center">
-      <h1 className="text-center text-lg md:text-2xl lg:text-4xl font-bold">
-        SERVICES
-      </h1>
-    </div>
+const Section4 = ({scrollYProgress}) => {
+  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [1, 1, 1, 1, 1]);
+
+  return(
+    <motion.div
+      style={{scale}} 
+      className="sticky bg-services h-screen bg-cover bg-center flex items-center"
+      >
+        <h1>SERVICES</h1>
+    </motion.div>
   );
 };
+
 
 export default About;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Services() {
   return (
  
-      <div className='w-full overflow-x-hidden flex flex-col text-center justify-center pb-36 '>
+      <div className='w-full overflow-x-hidden flex flex-col text-center justify-center '>
         <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center'> 
 
           {/* Breadcrumbs */}
@@ -23,7 +23,7 @@ function Services() {
           </nav>
           {/* End of Breadcrumbs */}
 
-          <h1 className='lg:mx-40 mx-5 drop-shadow-lg text-extrabold text-white font-sans text-5xl md:text-7xl lg:text-9xl '>
+          <h1 className='lg:mx-40 mx-5 drop-shadow-lg text-extrabold text-white font-sans text-5xl md:text-7xl lg:text-9xl'>
             SERVICES
           </h1>
         </div>

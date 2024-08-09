@@ -1,119 +1,103 @@
-import React from "react";
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
-import { MapPin } from "lucide-react";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
+import aboutbg from "../assets/aboutbg.jpg"
+import forest from "../assets/forest.png"
+import homebg from "../assets/homebg.jpg"
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <div className="grid grid-cols-3  gap-6 p-20">
+      <HorizontalScrollCarousel /> 
+  );
+};
 
+const HorizontalScrollCarousel = () => {
+  const targetRef = useRef(null);
+  
 
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
 
-      {/* Card 1 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
+ 
+  const x = useTransform(scrollYProgress, [0, 1], ["40%", "-45%"]);
 
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
+  return (
+    <section
+      ref={targetRef}
+      className="relative h-[300vh]">
+      <div className="sticky top-0 bg-black flex flex-col h-screen items-center justify-center overflow-hidden">
+        <div className="text-white py-20">
+          PROJECTS
         </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 absolute">
-          <div className="text-gray-800 font-semibold text-lg mb-2">
-            Compliance Monitoring Report (CMR)
-          </div>
-
-          <div className="text-center bg-midgreen w-1/2  flex items-center text-white p-4 gap-4">
-            <MapPin className="w-6 h-6" />
-            Mandaue City, Cebu
-          </div>
-        </div>
+        <motion.div style={{ x }} className="flex gap-4">
+          {cards.map((card) => (
+            <Card card={card} key={card.id} />
+          ))}
+        </motion.div>
       </div>
+    </section>
+  );
+};
 
-
-
-      {/* Card 2 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
-        </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 h-[150px] absolute flex items-end">
-          <div className="flex flex-col w-full">
-            <div className="text-gray-800 font-semibold text-lg mb-2 ml-4">
-              Compliance Monitoring Report (CMR)
-            </div>
-
-            <div className="bg-midgreen w-1/2 flex items-center text-white p-4 gap-4 ">
-              <MapPin className="w-6 h-6" />
-              Mandaue City, Cebu
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-      {/* Card 3 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
-        </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 absolute">
-          <div className="text-gray-800 font-semibold text-lg mb-2">
-            Compliance Monitoring Report (CMR)
-          </div>
-
-          <div className=" text-center bg-midgreen w-1/2  flex items-center text-white p-4 gap-4">
-            <MapPin className="w-6 h-6" />
-            Mandaue City, Cebu
-          </div>
-        </div>
+const Card = ({ card }) => {
+  return (
+    <div
+      key={card.id}
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+    >
+      <div
+        style={{
+          backgroundImage: `url(${card.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+      ></div>
+      <div className="absolute inset-0 z-10 grid place-content-center">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+          {card.title}
+        </p>
       </div>
     </div>
   );
-}
+};
+
+export default Projects;
+
+const cards = [
+  {
+    url: aboutbg,
+    title: "Project 1",
+    id: 1,
+  },
+  {
+    url: forest,
+    title: "Project 2",
+    id: 2,
+  },
+  {
+    url: homebg,
+    title: "Title 3",
+    id: 3,
+  },
+  {
+    url: "/imgs/abstract/4.jpg",
+    title: "Title 4",
+    id: 4,
+  },
+  {
+    url: "/imgs/abstract/5.jpg",
+    title: "Title 5",
+    id: 5,
+  },
+  {
+    url: "/imgs/abstract/6.jpg",
+    title: "Title 6",
+    id: 6,
+  },
+  {
+    url: "/imgs/abstract/7.jpg",
+    title: "Title 7",
+    id: 7,
+  },
+];
