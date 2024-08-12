@@ -1,119 +1,91 @@
-import React from "react";
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
-import { MapPin } from "lucide-react";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Projects() {
+
+
+function Projects() {
   return (
-    <div className="grid grid-cols-3  gap-6 p-20">
-
-
-
-      {/* Card 1 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
-        </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 absolute">
-          <div className="text-gray-800 font-semibold text-lg mb-2">
-            Compliance Monitoring Report (CMR)
-          </div>
-
-          <div className="text-center bg-midgreen w-1/2  flex items-center text-white p-4 gap-4">
-            <MapPin className="w-6 h-6" />
-            Mandaue City, Cebu
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* Card 2 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
-        </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 h-[150px] absolute flex items-end">
-          <div className="flex flex-col w-full">
-            <div className="text-gray-800 font-semibold text-lg mb-2 ml-4">
-              Compliance Monitoring Report (CMR)
-            </div>
-
-            <div className="bg-midgreen w-1/2 flex items-center text-white p-4 gap-4 ">
-              <MapPin className="w-6 h-6" />
-              Mandaue City, Cebu
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-      {/* Card 3 */}
-      <div className="w-full  relative bg-black ">
-        <div className="grid grid-cols-2 w-full  h-full ">
-          {" "}
-          {/**/}
-          <img
-            className="w-full h-full object-cover "
-            src={project1}
-            alt="Project 1"
-          />
-          <div className="grid grid-rows-2  ">
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-
-            <div>
-              <img className=" object-cover " src={project3} alt="Project 3" />
-            </div>
-          </div>
-        </div>
-
-        <div className="bottom-0 left-0 w-full bg-white bg-opacity-70 absolute">
-          <div className="text-gray-800 font-semibold text-lg mb-2">
-            Compliance Monitoring Report (CMR)
-          </div>
-
-          <div className=" text-center bg-midgreen w-1/2  flex items-center text-white p-4 gap-4">
-            <MapPin className="w-6 h-6" />
-            Mandaue City, Cebu
-          </div>
-        </div>
-      </div>
+    <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+  <div class="absolute inset-0">
+    <div class="h-1/3 bg-white sm:h-2/3"></div>
+  </div>
+  <div class="relative mx-auto max-w-7xl">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">See Our Projects</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
     </div>
-  );
+    <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="" alt="" />
+        </div>
+        <div class="flex flex-1 flex-col justify-between bg-white p-6">
+          <div class="flex-1">
+            <p class="text-sm font-medium text-indigo-600">
+              <a href="#" class="hover:underline">ECC</a>
+            </p>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-semibold text-gray-900">Water Distribution Project</p>
+              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
+            </a>
+          </div>
+          <div className='flex justify-end p-6'>
+            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="" alt="" />
+        </div>
+        <div class="flex flex-1 flex-col justify-between bg-white p-6">
+          <div class="flex-1">
+            <p class="text-sm font-medium text-indigo-600">
+              <a href="#" class="hover:underline">Video</a>
+            </p>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
+              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi.,
+                tempore temporibus quo laudantium.</p>
+            </a>
+          </div>
+          <div className='flex justify-end p-6'>
+            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="" alt=""/>
+        </div>
+        <div class="flex flex-1 flex-col justify-between bg-white p-6">
+          <div class="flex-1">
+            <p class="text-sm font-medium text-indigo-600">
+              <a href="#" class="hover:underline">Case Study</a>
+            </p>
+            <a href="#" class="mt-2 block">
+              <p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
+              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
+                perferendis hic.</p>
+            </a>
+          </div>
+          <div className='flex justify-end p-6'>
+            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  )
 }
+
+export default Projects
