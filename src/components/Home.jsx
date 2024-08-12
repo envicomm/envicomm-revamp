@@ -1,16 +1,16 @@
 import React from "react";
 import homebg2 from "../assets/homebg2.jpg";
 import Cards from "../components/Cards";
-import Projects from "../components/Projects";
-import Carousel from "../components/Carousel";
+import Projects from "../components/Projects"
 import Leaf from "../assets/Leaf.png";
+import Comments from "../components/Comments"
 import Footer from "../components/Footer";
 
 function Home() {
     return (
         <div className="overflow-x-hidden w-screen">
             <div
-                className="h-[93vh] w-full relative"
+                className="h-[50vh] lg:h-[93vh] w-full relative"
                 style={{ backgroundImage: `url(${homebg2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
                 <div className="bg-gradient-to-r from-white via-white h-full lg:w-2/3 md:w-4/5 sm:w-full flex flex-col items-center justify-center space-y-6 py-10 px-6 md:py-20 md:px-12">
@@ -25,7 +25,7 @@ function Home() {
                     </button>
                 </div>
             </div>
-            <div className="h-[50vh] w-full flex items-center justify-center flex-col space-y-8 bg-slate-50 p-4">
+            <div className="h-auto w-full relative flex items-center justify-center flex-col space-y-8 bg-slate-50 py-8 px-4 lg:p-20">
                 <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-serif text-midgreen">
                     Compliance, Community and Commitment
                 </h1>
@@ -33,9 +33,13 @@ function Home() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam molestiae rem amet alias enim illo animi. Corrupti porro consectetur necessitatibus doloribus aliquam illo pariatur, magnam, voluptatum tempora unde quasi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium a unde veritatis neque sapiente, totam repudiandae porro aspernatur id! Voluptas nulla nihil ipsa consectetur odit nisi placeat amet, deleniti tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores ipsa saepe fugit quibusdam iure similique commodi quae id repudiandae praesentium totam eos maxime, doloribus amet laborum optio voluptatum est!
                 </p>
             </div>
+            
             <Cards />
             <Projects />
-            <Carousel />
+            <Comments />
+           
+
+
             <div className="h-[50vh] w-full flex items-center justify-center px-4">
                 <div className="w-full h-full flex items-center justify-center">
                     <div className="bg-darkgreen rounded-lg flex flex-col md:flex-row items-center p-4 w-full max-w-4xl">
@@ -58,7 +62,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

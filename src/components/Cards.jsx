@@ -7,60 +7,60 @@ import { SearchCheck } from "lucide-react";
 
 export default function Cards() {
   return (
-    <div className="relative h-[93vh] w-full flex items-center justify-center flex-col space-y-8">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${forest})`, opacity: "0.5" }}
-      ></div>
-      <div className="relative z-10 flex flex-col justify-center items-center space-y-8">
-        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-serif text-midgreen">
-          Services We Offer
-        </h1>
-        <div className="flex flex-wrap gap-5 justify-center">
-          <div className="max-w-sm h- rounded text-darkgreen bg-slate-100 overflow-hidden shadow-lg font-serif">
-            <ClipboardCheck className="w-40 h-16 mx-auto mt-14 text-midgreen" />
-            <div className="px-4 py-4 text-center">
-              <div className="text-xl mb-4">Application</div>
-              <p className="text-gray-700 font-sans text-base ml-4 mr-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
+    <div className="relative lg:h-screen flex flex-col items-center justify-center lg:space-x-10  bg-forest lg:bg-cover py-10 ">
+        <div className="flex">
+            <h1>
+                SERVICES WE OFFER
+            </h1>
+        </div>
+        <div className="flex lg:flex-row flex-col gap-4 px-4 py-10 ">
+            <div class="flex flex-col rounded-2xl bg-[#ffffff] shadow-xl lg:w-[400px] lg:h-[500px] h-[400px]">
+            <figure class="flex justify-center items-center rounded-2xl">
+                <img src={forest} alt="Card Preview" class="rounded-t-2xl" />
+            </figure>
+            <div class="flex flex-col p-8">
+                <div class="text-2xl font-bold   text-[#374151] pb-6">Generator</div>
+                <div class=" text-lg text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
+                <div class="flex justify-end pt-6">
+                    <button class="bg-[#7e22ce] text-[#ffffff] font-bold text-base  p-3 rounded-lg hover:bg-purple-800 active:scale-95 transition-transform transform">Try it out!</button>
+                </div>
             </div>
-          </div>
-          <div className="max-w-sm h-100 rounded text-darkgreen bg-slate-100 overflow-hidden shadow-lg font-serif">
-            <Handshake className="w-40 h-16 mx-auto mt-14 text-midgreen" />
-            <div className="px-6 py-4 text-center">
-              <div className="text-xl mb-4">Planning</div>
-              <p className="text-gray-700 ml-4 mr-4 font-sans text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
+        </div>
+        <div class="flex flex-col rounded-2xl bg-[#ffffff] shadow-xl lg:w-[400px] lg:h-[500px] h-[400px]">
+            <figure class="flex justify-center items-center rounded-2xl">
+                <img src={forest} alt="Card Preview" class="rounded-t-2xl" />
+            </figure>
+            <div class="flex flex-col p-8">
+                <div class="text-2xl font-bold   text-[#374151] pb-6">Generator</div>
+                <div class=" text-lg   text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
+                <div class="flex justify-end pt-6">
+                    <button class="bg-[#7e22ce] text-[#ffffff]  font-bold text-base  p-3 rounded-lg hover:bg-purple-800 active:scale-95 transition-transform transform">Try it out!</button>
+                </div>
             </div>
-          </div>
-          <div className="max-w-sm h-80 text-darkgreen rounded bg-slate-100 overflow-hidden shadow-lg font-serif">
-            <ChartNoAxesCombined className="w-40 h-16 mx-auto mt-14 text-midgreen" />
-            <div className="px-6 py-4 text-center">
-              <div className="text-xl mb-4">Reporting</div>
-              <p className="text-gray-700 font-sans text-base ml-4 mr-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
+        </div>
+        <div class="flex flex-col rounded-2xl bg-[#ffffff] shadow-xl lg:w-[400px] lg:h-[500px] h-[400px]">
+            <figure class="flex justify-center items-center rounded-2xl">
+                <img src={forest} alt="Card Preview" class="rounded-t-2xl" />
+            </figure>
+            <div class="flex flex-col p-8">
+                <div class="text-2xl font-bold   text-[#374151] pb-6">Generator</div>
+                <div class=" text-lg   text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
+                <div class="flex justify-end pt-6">
+                    <button class="bg-[#7e22ce] text-[#ffffff]  font-bold text-base  p-3 rounded-lg hover:bg-purple-800 active:scale-95 transition-transform transform">Try it out!</button>
+                </div>
             </div>
-          </div>
-          <div className="max-w-sm h-80 text-darkgreen rounded bg-slate-100 overflow-hidden shadow-lg font-serif">
-            <SearchCheck className="w-40 h-16 mx-auto mt-14 text-midgreen" />
-            <div className="px-6 py-4 text-center">
-              <div className="text-xl mb-4">Consultancy</div>
-              <p className="text-gray-700 font-sans text-base ml-4 mr-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
+        </div>
+        <div class="flex flex-col rounded-2xl bg-[#ffffff] shadow-xl lg:w-[400px] lg:h-[500px] h-[400px]">
+            <figure class="flex justify-center items-center rounded-2xl">
+                <img src={forest} alt="Card Preview" class="rounded-t-2xl" />
+            </figure>
+            <div class="flex flex-col p-8">
+                <div class="text-2xl font-bold   text-[#374151] pb-6">Generator</div>
+                <div class=" text-lg   text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
+                <div class="flex justify-end pt-6">
+                    <button class="bg-[#7e22ce] text-[#ffffff]  font-bold text-base  p-3 rounded-lg hover:bg-purple-800 active:scale-95 transition-transform transform">Try it out!</button>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
