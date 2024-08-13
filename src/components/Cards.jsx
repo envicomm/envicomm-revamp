@@ -16,7 +16,7 @@ export default function Cards() {
         <div className="flex lg:flex-row flex-col gap-4 px-4 py-10 ">
             <div class="flex flex-col rounded-2xl bg-[#ffffff] shadow-xl lg:w-[400px] lg:h-[500px] h-[400px]">
             <figure class="flex justify-center items-center rounded-2xl">
-                <img src={forest} alt="Card Preview" class="rounded-t-2xl" />
+                <img src={forest} alt="Card Preview" class="rounded-t-2xl h-[100px]" />
             </figure>
             <div class="flex flex-col p-8">
                 <div class="text-2xl font-bold   text-[#374151] pb-6">Generator</div>

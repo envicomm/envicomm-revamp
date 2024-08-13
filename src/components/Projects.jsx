@@ -1,91 +1,63 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import hbrLogo from "../assets/hbrhd.png";
 
+const Projects = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const cards = [
+    { id: 1, image: hbrLogo },
+    { id: 2, image: hbrLogo },
+    { id: 3, image: hbrLogo },
+  ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    }, 5000); // Change every 5 seconds
 
-function Projects() {
+    return () => clearInterval(interval);
+  }, [cards.length]);
+
+  const calculatePosition = (index) => {
+    const offset = index - currentIndex;
+    if (offset === 0) return { scale: 1.1, zIndex: 10, x: "0%" };
+    if (offset === -1 || offset === cards.length - 1)
+      return { scale: 0.9, zIndex: 5, x: "-100%" };
+    if (offset === 1 || offset === -(cards.length - 1))
+      return { scale: 0.9, zIndex: 5, x: "100%" };
+    return { scale: 0.7, zIndex: 1, x: offset > 0 ? "150%" : "-150%" };
+  };
+
   return (
-    <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-  <div class="absolute inset-0">
-    <div class="h-1/3 bg-white sm:h-2/3"></div>
-  </div>
-  <div class="relative mx-auto max-w-7xl">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">See Our Projects</h2>
-      <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+    <div className="relative flex flex-col items-center h-screen overflow-hidden bg-gradient-to-b from-midgreen to-white">
+      <h1 className="pt-20 text-white font-serif text-4xl text-center">Customer's Feedback</h1>
+      <div className="absolute inset-0 flex justify-center items-center">
+        <div className="relative flex items-center min-w-96">
+          {cards.map((card, index) => {
+            const { scale, zIndex, x } = calculatePosition(index);
+            return (
+              <motion.div
+                key={card.id}
+                className="absolute flex justify-center items-center"
+                style={{
+                  zIndex,
+                  transform: `translateX(${x}) scale(${scale})`,
+                  transition: "transform 0.5s ease-in-out",
+                  width: "100%", // Adjust width for responsiveness
+                }}
+              >
+                <img
+                  src={card.image}
+                  alt={`Card ${card.id}`}
+                  className=" lg:w-[350px] w-[280px] h-[350px] rounded-lg shadow-lg"
+                />
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
     </div>
-    <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+  );
+};
 
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="" alt="" />
-        </div>
-        <div class="flex flex-1 flex-col justify-between bg-white p-6">
-          <div class="flex-1">
-            <p class="text-sm font-medium text-indigo-600">
-              <a href="#" class="hover:underline">ECC</a>
-            </p>
-            <a href="#" class="mt-2 block">
-              <p class="text-xl font-semibold text-gray-900">Water Distribution Project</p>
-              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
-            </a>
-          </div>
-          <div className='flex justify-end p-6'>
-            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="" alt="" />
-        </div>
-        <div class="flex flex-1 flex-col justify-between bg-white p-6">
-          <div class="flex-1">
-            <p class="text-sm font-medium text-indigo-600">
-              <a href="#" class="hover:underline">Video</a>
-            </p>
-            <a href="#" class="mt-2 block">
-              <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
-              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi.,
-                tempore temporibus quo laudantium.</p>
-            </a>
-          </div>
-          <div className='flex justify-end p-6'>
-            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="" alt=""/>
-        </div>
-        <div class="flex flex-1 flex-col justify-between bg-white p-6">
-          <div class="flex-1">
-            <p class="text-sm font-medium text-indigo-600">
-              <a href="#" class="hover:underline">Case Study</a>
-            </p>
-            <a href="#" class="mt-2 block">
-              <p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
-              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
-                perferendis hic.</p>
-            </a>
-          </div>
-          <div className='flex justify-end p-6'>
-            <Link to="" className='flex bg-black w-1/2 text-white text-center justify-center p-2 rounded-xl hover:bg-slate-500'>Button</Link>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-  )
-}
-
-export default Projects
+export default Projects;
