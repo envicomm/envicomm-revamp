@@ -5,10 +5,11 @@ import Projects from "../components/Projects"
 import Leaf from "../assets/Leaf.png";
 import Comments from "../components/Comments"
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
-        <div className="overflow-x-hidden w-screen">
+        <div className="overflow-x-hidden w-full">
             <div
                 className="h-[50vh] lg:h-[93vh] w-full relative"
                 style={{ backgroundImage: `url(${homebg2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -18,11 +19,11 @@ function Home() {
                         ENVI-COMM CORPORATION
                     </h1>
                     <h2 className="text-green-900 text-center px-4 md:px-8 max-w-prose">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe minus vel aperiam consequatur labore veritatis alias quibusdam aut corporis, deleniti quae iste aspernatur ad, dolorem eligendi rerum nihil quis.
+                    "Guiding Your Path to Green: Your Environmental Compliance Consulting Firm."
                     </h2>
-                    <button className="bg-green-900 text-white py-2 px-4 rounded-lg mt-4">
+                    <Link to="/contact" className="bg-green-900 text-white py-2 px-4 rounded-lg mt-4">
                         Contact Us
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="h-auto w-full relative flex items-center justify-center flex-col space-y-8 bg-slate-50 py-8 px-4 lg:p-20">

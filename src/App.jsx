@@ -11,6 +11,8 @@ import Consultancy from "./components/Consultancy"
 import Planning from "./components/Planning";
 import Reporting from "./components/Reporting";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact"
+import ScrollToTop from "./components/ScrollTotop";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +20,7 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop />
       <div>
         <Nav />
         <Routes>
@@ -28,6 +31,7 @@ function App() {
           <Route path="/services/consultancy" element={<Consultancy />} />
           <Route path="/services/planning" element={<Planning />} />
           <Route path="/services/reporting" element={<Reporting />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
     
       </div>

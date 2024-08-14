@@ -87,7 +87,7 @@ function ContactUs() {
                     </div>
                 </form>
             </div>
-            <Footer/>
+            
         </div>
     );
 };
