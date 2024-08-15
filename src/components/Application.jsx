@@ -18,6 +18,10 @@ function Application() {
                     <li>
                     <Link to="/Services" className={`text-white hover:text-slate-500 ${location.pathname === '/Services' ? 'underline' : ""}`}>Services</Link>
                     </li>
+                    <li>-</li>
+                    <li>
+                            <Link to="/services/application" className={`text-white hover:text-slate-500 ${location.pathname === '/services/application' ? 'underline' : ""}`}>Application</Link>
+                    </li>
                 </ol>
             </nav>
             {/* End of Breadcrumbs */}
@@ -44,13 +48,13 @@ function Application() {
                     TURNING VISIONS INTO REALITY WITH SUSTAINABLE SOLUTIONS.
                 </p1>
 
-                <p className=' flex text-lightgreen justify-start pl-[342px] pt-[70px]' >
+                <p className=' flex text-lightgreen justify-start   lg:pl-[342px] pt-[70px]' >
                     WE PROCESS:
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 pl-[342px]">
-                    <div className="table-container">
-                        <table className="w-full border-collapse">
+                <div className=" grid grid-cols-2 md:grid-cols-2 gap-4 p-4 md:p-6 lg:pl-[342px] text-base md:text-lg overflow-y-auto md:h-full">
+                    <div className="table-container ">
+                        <table className="w-full border-collapse ">
                             <tbody className='text-justify text font-serif'>
                                 <tr>
                                     <td className="p-2 before:content-['•'] before:mr-2">Area Clearance</td>
@@ -103,8 +107,8 @@ function Application() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="table-container text-justify ">
-                        <table className="w-full border-collapse">
+                    <div className="table-container  ">
+                        <table className="w-full border-collapse text-justify ">
                             <tbody className='font-serif'>
                                 <tr>
                                     <td className="p-2 before:content-['•'] before:mr-2">Permit to Operate</td>
@@ -150,7 +154,9 @@ function Application() {
                                 </tr>
                             </tbody>
                         </table>
+                        
                     </div>
+       
                 </div>
             </div>
            
