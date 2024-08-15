@@ -7,9 +7,9 @@ function Application() {
     return (
         <>
         <div className='w-full flex flex-col text-center justify-center'>
-            <div className='relative bg-services w-screen h-[600px] bg-cover bg-center flex items-center overflow-hidden'>
+            <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center'>
                 {/* breacrumbs */}
-                <nav aria-label="breadcrumb" className='absolute top-[200px] left-[200px] z-10'>
+                <nav aria-label="breadcrumb" className='lg:mx-40 mx-5'>
                     <ol className="flex space-x-2 text-gray-500">
                         <li>
                             <Link to="/" className='text-white hover:text-slate-500'>Home</Link>
@@ -25,7 +25,7 @@ function Application() {
                     </ol>
                 </nav>
                 {/* end of breadcrumbs */}
-                <h1 className='flex items-center ml-[200px] drop-shadow-lg text-extrabold text-white font-sans text-9xl'>
+                <h1 className='lg:mx-40 mx-5 drop-shadow-lg text-extrabold text-white font-sans text-5xl md:text-7xl lg:text-9xl '>
                     SERVICES
                 </h1>
 
@@ -38,7 +38,7 @@ function Application() {
                 <div className='pt-[32px] pl-[174px]'>
                     <Link
                         to="/services"
-                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
+                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  md:w-[124px] md:h-[40px] md:text-[12px] items-center justify-center'>
                         <ArrowLeft />Back
                     </Link>
                 </div>
@@ -49,11 +49,11 @@ function Application() {
                     PIONEERING DATA-DRIVEN DECISIONS FOR A HEALTHIER ENVIRONMENT.
                 </p1>
 
-                <p className=' flex text-lightgreen justify-start pl-[342px] pt-[70px]' >
+                <p className=' flex text-lightgreen justify-start   lg:pl-[342px] pt-[70px]' >
                     WE PROCESS:
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 pl-[342px]">
+                <div className=" grid grid-cols-2 md:grid-cols-2 gap-4 p-4 md:p-6 lg:pl-[342px] text-base md:text-lg overflow-y-auto sm:h-full">
                     <div className="table-container">
                         <table className="w-full border-collapse">
                             <tbody className='text-justify text font-serif'>
