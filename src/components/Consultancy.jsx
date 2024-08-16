@@ -60,7 +60,7 @@ function Application() {
                 <div className=" grid grid-cols-2 md:grid-cols-2 gap-4 p-4 md:p-6 lg:pl-[342px] text-base md:text-lg overflow-y-auto h-full">
                     <div className="table-container">
                         <table className="w-full border-collapse">
-                            <tbody className='text-justify text font-serif'>
+                            <tbody className='text-justify text font-roboto'>
                                 <tr>
                                     <td className="p-2 before:content-['•'] before:mr-2">Rainwater Recycling Program</td>
                                 </tr>
@@ -91,7 +91,7 @@ function Application() {
                     </div>
                     <div className="table-container text-justify ">
                         <table className="w-full border-collapse">
-                            <tbody className='font-serif'>
+                            <tbody className='font-roboto'>
                                 <tr>
                                     <td className="p-2 before:content-['•'] before:mr-2">Community Environmental and Natural Resource Office (CENRO) Certificate</td>
                                 </tr>
