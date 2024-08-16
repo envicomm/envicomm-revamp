@@ -36,21 +36,23 @@ function Application() {
             <div className='pt-[30px] h-screen overflow-hidden'>
                 <div className='md:pt-[32px] md:pl-[174px] md:justify-center '>
                     <div className='flex flex-col md:flex-row items-center lg:gap-4'>
-                    <Link
-                        to="/services"
-                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
-                        <ArrowLeft />Back
-                    </Link>
+                        <Link
+                            to="/services"
+                            className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
+                            <ArrowLeft />Back
+                        </Link>
                     </div>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#547326] font-serif sm:px-4 md:px-6 lg:px-8">
                     APPLICATION
                 </h1>
-                <p className="text-xl text-midgreen sm:px-4 md:px-6 lg:px-8">
+                <div className='flex items-center justify-center px-8  md:px-16'>
+                <p className="text-xl text-midgreen  flex flex-col md:flex-row items-center lg:gap-4">
                     TURNING VISIONS INTO REALITY WITH SUSTAINABLE SOLUTIONS.
-                </p>    
-
-                <p className="flex text-lightgreen justify-start lg:pl-[342px] sm:pl-4 md:pl-6 pt-[70px]">
+                </p>
+                </div>
+            
+                <p className="flex text-lightgreen justify-start lg:pl-[342px] sm:pl-4 md:pl-6 pt-[70px] ">
                     WE PROCESS:
                 </p>
 

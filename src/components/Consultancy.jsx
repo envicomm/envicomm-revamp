@@ -43,16 +43,19 @@ function Application() {
                         </Link>
                     </div>
                 </div>
+
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  text-[#547326] font-serif">
                     CONSULTANCY
                 </h1>
-                <p1 className="text-xl text-midgreen">
-                    SUSTAINABLE SOLUTIONS, EXPERTLY DELIVERED.
-                </p1>
-
-                <p className=' flex text-lightgreen justify-start   lg:pl-[342px] pt-[70px]' > Q
-                    WE PROCESS:
-                </p>
+                <div className='flex items-center justify-center px-8  md:px-16'>
+                    <p1 className="text-xl text-midgreen">
+                        SUSTAINABLE SOLUTIONS, EXPERTLY DELIVERED.
+                    </p1>
+                </div>
+                    <p className=' flex text-lightgreen justify-start   lg:pl-[342px] pt-[70px]' >
+                        WE PROCESS:
+                    </p>
+            
 
                 <div className=" grid grid-cols-2 md:grid-cols-2 gap-4 p-4 md:p-6 lg:pl-[342px] text-base md:text-lg overflow-y-auto h-full">
                     <div className="table-container">
