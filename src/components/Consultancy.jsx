@@ -34,12 +34,14 @@ function Application() {
 
             </ol>
             <div className='pt-[30px] h-screen overflow-hidden'>
-                <div className='pt-[32px] md:pl-[174px]'>
-                    <Link
-                        to="/services"
-                        className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
-                        <ArrowLeft />Back
-                    </Link>
+                <div className='md:pt-[32px] md:pl-[174px] md:justify-center '>
+                    <div className='flex flex-col md:flex-row items-center lg:gap-4'>
+                        <Link
+                            to="/services"
+                            className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
+                            <ArrowLeft />Back
+                        </Link>
+                    </div>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  text-[#547326] font-serif">
                     CONSULTANCY
@@ -118,9 +120,9 @@ function Application() {
                 <div className="h-screen w-screen">
 
                 </div>
-               
+
             </div>
-          
+
         </div>
     )
 }
