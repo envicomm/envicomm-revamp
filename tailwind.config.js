@@ -22,6 +22,7 @@ export default {
         'homebg'  : "url('/src/assets/homebg.jpg')",
         'project1' : "url('/src/assets/project1.jpg')",
         'footer' : "url('/src/assets/footer.png')",
+        'bgfeedback' : "url('/src/assets/bgfeedback.jpg)",
       },
     },
   },
