@@ -13,32 +13,33 @@ import Reporting from "./components/Reporting";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact"
 import ScrollToTop from "./components/ScrollTotop";
-
+import { AnimatePresence } from "framer-motion";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-    <Router>
-      <ScrollToTop />
+      <Router>
+        <ScrollToTop />
+        <div>
+          <Nav />
+          <AnimatePresence>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/application" element={<Application />} />
+              <Route path="/services/consultancy" element={<Consultancy />} />
+              <Route path="/services/planning" element={<Planning />} />
+              <Route path="/services/reporting" element={<Reporting />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </div>
+      </Router>
       <div>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/application" element={<Application />} />
-          <Route path="/services/consultancy" element={<Consultancy />} />
-          <Route path="/services/planning" element={<Planning />} />
-          <Route path="/services/reporting" element={<Reporting />} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-    
+        <Footer />
       </div>
-    </Router>
-    <div>
-    <Footer />
-    </div>
     </>
   );
 }
