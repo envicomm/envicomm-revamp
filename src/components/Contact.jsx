@@ -30,7 +30,7 @@ function ContactUs() {
                             <h3 className="text-xl sm:text-2xl lg:text-4xl text-[#547326] sm:mb-8 font-medium">
                                 Get in Touch
                             </h3>
-                            <p className="lg:mb-8 text-justify leading-5 sm:leading-7">
+                            <p className="lg:mb-8 text-justify leading-5 sm:leading-7 ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
                             <p className="lg:mb-2 flex items-center p-2 sm:p-4">
