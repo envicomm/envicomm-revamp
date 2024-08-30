@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -8,14 +9,14 @@ function Footer() {
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-10 lg:space-y-0 lg:space-x-[200px] xl:space-x-[400px] mb-28">
                     <div className="flex flex-col lg:flex-row justify-center items-center">
                         <img src="../src/assets/logoWhite.png" alt="Logo" className="lg:h-[100px] lg:border-r-2 lg:pr-20 h-[50px]" />
-                        <div className="flex flex-col text-center p-4 pl-10 lg:pl-20">
+                        <div className="flex flex-col items-center lg:items-center p-4 lg:pl-20">
                             <div className="font-semibold mb-2">Category</div>
                             <a href="/" className="hover:underline">Home</a>
                             <a href="/about" className="hover:underline">About</a>
                             <a href="/services" className="hover:underline">Services</a>
                             <a href="contact" className="hover:underline">Contact</a>
                         </div>
-                        <div className="flex flex-col text-center p-4">
+                        <div className="flex flex-col items-center lg:items-center p-4">
                             <div className="font-semibold mb-2">Services</div>
                             <a href="/services/application" className="hover:underline">Applications</a>
                             <a href="/services/planning" className="hover:underline">Planning</a>
