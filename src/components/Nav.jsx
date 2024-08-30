@@ -54,13 +54,13 @@ function Nav() {
                                 Services
                             </Link>
                         </li>
-                        <li className="px-4 py-2">
-                            <button className="w-full px-4 py-2 bg-lightgreen hover:bg-white hover:text-midgreen text-gray-50 rounded-xl flex items-center gap-2">
+                        <li className="px-4 py-2 justify-center">
+                            <Link to="/contact" className="w-full px-4 py-2 bg-lightgreen hover:bg-white hover:text-midgreen text-gray-50 rounded-xl flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     {/* Add your SVG content here */}
                                 </svg>
                                 <span>Contact Us</span>
-                            </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>

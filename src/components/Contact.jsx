@@ -1,12 +1,25 @@
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function ContactUs() {
     return (
-        <div className="font-sans bg-white lg:h-full">
-            <div className="h-[528px] w-full bg-cover bg-center" style={{ backgroundImage: 'url("src/assets/homebg.jpg")' }}>
-                <h1 className="text-white pt-[230px] pl-[177px] text-center lg:text-left text-4xl lg:text-5xl">Contact Us</h1>
+        <div className="w-full overflow-x-hidden flex flex-col text-center justify-center pb-36">
+            <div className="bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center">
+                <nav aria-label="breadcrumb" className='lg:mx-40 mx-5 '>
+                    <ol className="flex space-x-2 text-gray-500">
+                        <li>
+                            <Link to="/" className='text-white hover:text-slate-500'>Home</Link>
+                        </li>
+                        <li>-</li>
+                        <li>
+                            <Link to="/Contact" className={`text-white hover:text-slate-500 ${location.pathname === '/contact' ? 'underline' : ""}`}>Contact</Link>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 className='lg:mx-40 mx-5 drop-shadow-lg text-extrabold text-white font-sans text-5xl md:text-7xl lg:text-9xl '>
+                    Contact Us
+                </h1>
             </div>
 
             <div className="p-6 mx-auto max-w-full lg:max-w-[1600px]">
