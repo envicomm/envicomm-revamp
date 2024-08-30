@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 function Footer() {
     return (
@@ -10,30 +11,30 @@ function Footer() {
                         <div className="flex flex-col text-center p-4 pl-10 lg:pl-20">
                             <div className="font-semibold mb-2">Category</div>
                             <a href="/" className="hover:underline">Home</a>
-                            <a href="#" className="hover:underline">About</a>
-                            <a href="#" className="hover:underline">Services</a>
-                            <a href="#" className="hover:underline">Contact</a>
+                            <a href="/about" className="hover:underline">About</a>
+                            <a href="/services" className="hover:underline">Services</a>
+                            <a href="contact" className="hover:underline">Contact</a>
                         </div>
                         <div className="flex flex-col text-center p-4">
                             <div className="font-semibold mb-2">Services</div>
-                            <a href="#" className="hover:underline">Applications</a>
-                            <a href="#" className="hover:underline">Planning</a>
-                            <a href="#" className="hover:underline">Reporting</a>
-                            <a href="#" className="hover:underline">Consultancy</a>
+                            <a href="/services/application" className="hover:underline">Applications</a>
+                            <a href="/services/planning" className="hover:underline">Planning</a>
+                            <a href="/services/reporting" className="hover:underline">Reporting</a>
+                            <a href="/services/consultancy" className="hover:underline">Consultancy</a>
                         </div>
                     </div>
                     <div className="flex flex-col space-y-4 lg:space-y-6 text-center lg:text-left lg:items-start">
-                        <div>2nd Floor, Aboitiz Corporate Center, Brgy. Kasambagan, Cebu City, Cebu, 6000, PH</div>
-                        <div>09171773171</div>
-                        <div>official@envicomm.org</div>
+                        <div><MapPin className='inline-flex mr-2'/>2nd Floor, Aboitiz Corporate Center, Brgy. Kasambagan, Cebu City, Cebu, 6000, PH</div>
+                        <div><Phone className='inline-flex mr-2' />09171773171</div>
+                        <div><Mail className='inline-flex mr-2'/> official@envicomm.org</div>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between items-center mb-4 lg:mb-0">
-                    <div>2023 All rights reserved</div>
-                    <div className="flex space-x-4">
+                    <div className='font-sans'>2024 All rights reserved</div>
+                    {/* <div className="flex space-x-4">
                         <a href="#" className="hover:underline">Privacy policy</a>
                         <a href="#" className="hover:underline">Terms of service</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>
