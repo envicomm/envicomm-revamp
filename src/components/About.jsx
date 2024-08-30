@@ -14,11 +14,12 @@ function About() {
   useEffect(() => {}, []);
 
   return (
-    <main ref={container} className="relative h-[400vh]">
+    <main ref={container} className="relative h-[500vh]">
       <Section1 scrollYProgress={scrollYProgress} />
       <Section2 scrollYProgress={scrollYProgress} />
       <Section3 scrollYProgress={scrollYProgress} />
       <Section4 scrollYProgress={scrollYProgress} />
+      <Section5 scrollYProgress={scrollYProgress} />
     </main>
   );
 }
@@ -60,11 +61,8 @@ const Section1 = ({ scrollYProgress }) => {
         <h1 className="flex drop-shadow-lg text-extrabold text-lightgreen text-2xl md:text-3xl font-serif">
           COMPLIANCE, COMMUNITY, COMMITMENT
         </h1>
-        <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-          consectetur, numquam soluta distinctio perspiciatis amet dolorem
-          eveniet neque reprehenderit sapiente, dignissimos magnam quos
-          recusandae molestiae ipsum asperiores adipisci minima quia.
+        <p className="text-white px-4 text-justify">
+          <span className='text-lightgreen'>ENVI-COMM CORPORATION</span> is an environmental consulting corporation composed of individuals passionate about sustainable development through compliance with various environmental regulations andthe institutionalization of in-house environmental conservation and sustainable development programs and systems.
         </p>
       </div>
     </motion.div>
@@ -78,10 +76,13 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale }}
-      className="sticky bg-project1 h-screen bg-cover bg-center flex items-center top-0"
+      className="sticky bg-project1 h-screen bg-cover bg-center flex flex-col justify-center text-justify px-4 items-center top-0"
     >
       <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold text-white">
-        MISSION
+       OUR HISTORY
+      </div>
+      <div>
+        <span>ENVI-COMM CORPORATION</span> was established in 2018 under Greenergyst, Envi-comm emerged to promote sustainable practices in the Philippines. After a temporary closure during the 2020 pandemic, we reopened in 2021 with renewed dedication to environmental stewardship.
       </div>
     </motion.div>
   );
@@ -94,10 +95,14 @@ const Section3 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale}}
-      className="sticky bg-services h-screen bg-cover bg-center flex items-center top-0"
+      className="sticky bg-services h-screen bg-cover bg-center flex flex-col justify-center text-justify px-4 space-y-4 items-center top-0"
     >
-      <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold text-white">
-        VISION
+      <div className="text-center text-4xl md:text-2xl lg:text-4xl font-extrabold text-white">
+        MISSION
+      </div>
+      <div className='text-midgreen font-bold'>Green for Tomorrow</div>
+      <div className='text-white'>
+        We strive to deliver unparalled service across different fields of expertise and provide service reliability that exceeds our Customer's standards and expectations
       </div>
     </motion.div>
   );
@@ -110,13 +115,39 @@ const Section4 = ({scrollYProgress}) => {
   return (
     <motion.div
       style={{ scale }}
-      className="sticky bg-services h-screen bg-cover bg-center flex items-center top-0"
+      className="sticky bg-services h-screen bg-cover bg-center flex flex-col justify-center text-justify px-4 items-center top-0"
     >
-      <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold">
-        SERVICES
+      <div className="text-center text-4xl md:text-2xl lg:text-4xl font-extrabold text-white">
+        VISION
+      </div>
+      <div className='text-midgreen font-bold'>ECO LEADERSHIP</div>
+      <div className='text-white'>
+       We aim to be the national leader in providing reliable environmental compliance and consultancy solutions.
       </div>
     </motion.div>
   );
 };
 
+const Section5 = ({scrollYProgress}) => {
+
+  const scale = useTransform(scrollYProgress, [0.35, 0.5, 0.65, 0.8, 1], [1, 1, 1, 1, 1]);
+
+  return (
+    <motion.div
+      style={{ scale }}
+      className="sticky bg-gradient-to-b from-lightgreen via-white to-white h-screen bg-cover bg-center flex items-center top-0"
+    >
+      <div className="text-center text-lg md:text-2xl lg:text-4xl font-bold">
+        CORE VALUES
+      </div>
+      <div>
+        <ul>
+          <li>Unparalled Service</li>
+          <li>Professionalism</li>
+          <li>Integrity</li>
+        </ul>
+      </div>
+    </motion.div>
+  );
+};
 export default About;

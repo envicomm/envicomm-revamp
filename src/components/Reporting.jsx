@@ -38,15 +38,7 @@ function Application() {
             </ol>
             <Animate>
                 <div className='pt-[30px] lg:h-full overflow-hidden'>
-                    <div className='md:pt-[32px] md:pl-[174px] md:justify-center '>
-                        <div className='flex flex-col md:flex-row items-center lg:gap-4 '>
-                            <Link
-                                to="/services"
-                                className='flex bg-darkgreen hover:bg-lightgreen rounded-2xl p-4 text-white shadow-lg  w-[124px] h-[40px] text-[12px] items-center justify-center'>
-                                <ArrowLeft />Back
-                            </Link>
-                        </div>
-                    </div>
+                    
                     <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  text-[#547326] font-serif">
                         REPORTING
                     </h1>
@@ -61,7 +53,7 @@ function Application() {
                     <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 p-4 md:p-6 lg:pl-[342px] text-base md:text-lg overflow-y-auto h-full ">
                         <div className="table-container">
                             <table className="w-full border-collapse">
-                                <tbody className='text-start text font-serif'>
+                                <tbody className='text-start text font-sans'>
                                     <tr>
                                         <td className="p-2 before:content-['•'] before:mr-2">Compliance Monitoring and Verification Report</td>
                                     </tr>
