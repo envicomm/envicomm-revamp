@@ -6,7 +6,6 @@ import Leaf from "../assets/Leaf.png";
 import Hero from "./Hero"
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import Subscribe from "./Subscribe";
 
 function Home() {
     return (
@@ -14,7 +13,6 @@ function Home() {
             <Hero/>
             <Cards />
             <Feedback />
-            <Subscribe />
 
         
         </div>
