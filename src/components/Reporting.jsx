@@ -8,7 +8,7 @@ function Application() {
     return (
         <div className='min-h-screen flex flex-col text-center justify-center'>
 
-            <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center'>
+            <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center '>
                 <Animate>
                     {/* breacrumbs */}
                     <nav aria-label="breadcrumb" className='lg:mx-40 mx-5'>

@@ -11,8 +11,8 @@ const animation = {
 const Animate = ({ children }) => {
     const controls = useAnimation();
     const { ref, inView } = useInView({
-        triggerOnce: true, // Animation triggers only once
-        threshold: 0.1,    // Percentage of the component that needs to be visible to trigger
+        triggerOnce: true, // 
+        threshold: 0.1,    // 
     });
 
     useEffect(() => {

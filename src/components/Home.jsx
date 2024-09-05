@@ -10,8 +10,8 @@ import Subscribe from "./Subscribe";
 
 function Home() {
     return (
-        <div className="overflow-x-hidden w-full">
-            <Hero className="sticky"/>
+        <div className="w-full">
+            <Hero/>
             <Cards />
             <Feedback />
             <Subscribe />

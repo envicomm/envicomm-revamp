@@ -42,7 +42,7 @@ function BannerCarousel() {
 
       {/* Banner Content */}
       <div className="relative z-20 flex h-full lg:w-2/3 w-full flex-col items-center justify-center space-y-4 p-4 text-center sm:space-y-6 sm:p-6 md:space-y-8 md:p-12">
-        <h1 className="text-3xl lg:font-extrabold font-bold sm:text-4xl md:text-5xl lg:text-8xl lg:w-1/2 ">
+        <h1 className="text-3xl lg:font-extrabold font-bold sm:text-4xl md:text-5xl lg:text-7xl lg:w-1/2 ">
           ENVI-COMM CORPORATION
         </h1>
         <h2 className="px-2 text-sm text-darkgreen sm:px-4 sm:text-base md:px-8 md:text-lg">
