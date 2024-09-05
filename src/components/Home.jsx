@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
     return (
-        <div className="overflow-x-hidden w-full">
-            <Hero className="sticky"/>
+        <div className="w-full">
+            <Hero/>
             <Cards />
             <Feedback />
 

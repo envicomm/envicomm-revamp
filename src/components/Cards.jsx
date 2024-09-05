@@ -7,7 +7,7 @@ import consultancy from "../assets/consultancy.png"
 
 export default function Cards() {
   return (
-    <div className="relative overflow-x-hidden lg:h-screen w-full flex flex-col items-center justify-center lg:space-x-10  pb-20">
+    <div className="relative lg:h-screen w-full flex flex-col items-center justify-center lg:space-x-10  pb-20">
         <div className="flex justify-center pb-20">
             <h1 className="font-serif text-darkgreen font-bold lg:text-6xl text-2xl lg:pt-0 pt-20">
                 SERVICES WE OFFER
