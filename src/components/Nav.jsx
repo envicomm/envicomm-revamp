@@ -10,13 +10,14 @@ function Nav() {
   };
 
   return (
-    <nav className="bg-midgreen w-full">
-      <div className="container mx-auto flex flex-wrap items-center justify-between p-4 md:flex-nowrap">
+    <nav className="bg-[#404041] w-full p-4 relative">
+      <div className="flex justify-between items-center w-full">
+        {/* Logo and Menu Button */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <img src={logoWhite} alt="logo" className="h-[50px]" />
           <button
             onClick={toggleMenu}
-            className="md:hidden text-white focus:outline-none transition-transform duration-1000 ease-in-out"
+            className="md:hidden text-white focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -30,16 +31,18 @@ function Nav() {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
+              />
             </svg>
           </button>
         </div>
+
+        {/* Navigation Links */}
         <div
-          className={`w-full md:w-auto transition-all duration-1000 ease-in-out transform ${
+          className={`absolute z-50 md:static top-full left-0 bg-[#404041] w-full md:w-auto transition-all duration-500 ease-in-out overflow-hidden md:overflow-visible ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-          } md:max-h-full md:opacity-100 md:transform-none md:block`}
+          } md:max-h-full md:opacity-100`}
         >
-          <ul className="flex flex-col md:flex-row font-semibold text-white md:justify-between md:space-x-4">
+          <ul className="flex flex-col md:flex-row items-center font-semibold text-white md:space-x-4">
             <li className="px-4 py-2">
               <Link
                 to="/"
@@ -67,20 +70,12 @@ function Nav() {
                 Services
               </Link>
             </li>
-            <li className="px-4 py-2 justify-center">
+            <li className="px-4 py-2">
               <Link
                 to="/contact"
-                className="w-full px-4 py-2 bg-lightgreen hover:bg-white hover:text-midgreen text-gray-50 rounded-xl flex items-center gap-2"
+                className="w-full px-4 py-2 bg-midgreen hover:bg-white hover:text-midgreen text-gray-50 rounded-xl"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  {/* Add your SVG content here */}
-                </svg>
-                <span>Contact Us</span>
+                Contact Us
               </Link>
             </li>
           </ul>

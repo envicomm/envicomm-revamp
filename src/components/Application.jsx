@@ -6,7 +6,7 @@ import Animate from './Animate'
 
 function Application() {
     return (
-        <div className='min-h-screen flex flex-col text-center justify-center'>
+        <div className='min-h-screen flex flex-col text-center justify-center mb-4'>
 
             <div className='bg-services lg:h-[600px] h-[300px] bg-cover bg-center flex flex-col items-start justify-center'>
                 <Animate>

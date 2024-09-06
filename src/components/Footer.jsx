@@ -1,45 +1,132 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Footer() {
-    return (
-        <footer className="relative bg-footer bg-cover bg-center w-full h-auto z-0">
-            <div className="w-full lg:h-[448px] h-[900px] flex flex-col justify-end items-center text-white ">
-                <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-10 lg:space-y-0 lg:space-x-[200px] xl:space-x-[400px] mb-28">
-                    <div className="flex flex-col lg:flex-row justify-center items-center">
-                        <img src="../src/assets/logoWhite.png" alt="Logo" className="lg:h-[100px] lg:border-r-2 lg:pr-20 h-[50px]" />
-                        <div className="flex flex-col items-center lg:items-center p-4 lg:pl-20">
-                            <div className="font-semibold mb-2">Category</div>
-                            <a href="/" className="hover:underline">Home</a>
-                            <a href="/about" className="hover:underline">About</a>
-                            <a href="/services" className="hover:underline">Services</a>
-                            <a href="contact" className="hover:underline">Contact</a>
-                        </div>
-                        <div className="flex flex-col items-center lg:items-center p-4">
-                            <div className="font-semibold mb-2">Services</div>
-                            <a href="/services/application" className="hover:underline">Applications</a>
-                            <a href="/services/planning" className="hover:underline">Planning</a>
-                            <a href="/services/reporting" className="hover:underline">Reporting</a>
-                            <a href="/services/consultancy" className="hover:underline">Consultancy</a>
-                        </div>
-                    </div>
-                    <div className="flex flex-col space-y-4 lg:space-y-6 text-center lg:text-left lg:items-start">
-                        <div><MapPin className='inline-flex mr-2'/>2nd Floor, Aboitiz Corporate Center, Brgy. Kasambagan, Cebu City, Cebu, 6000, PH</div>
-                        <div><Phone className='inline-flex mr-2' />09171773171</div>
-                        <div><Mail className='inline-flex mr-2'/> official@envicomm.org</div>
-                    </div>
-                </div>
-                <div className="flex flex-col lg:flex-row justify-between items-center mb-4 lg:mb-0">
-                    <div className='font-sans'>2024 All rights reserved</div>
-                    {/* <div className="flex space-x-4">
-                        <a href="#" className="hover:underline">Privacy policy</a>
-                        <a href="#" className="hover:underline">Terms of service</a>
-                    </div> */}
-                </div>
+  return (
+    <section className="xl:h-full w-full bg-[#404041] flex flex-col  items-center justify-center xl:pt-12 gap-4">
+      <div className="grid grid-cols-1 xl:grid-cols-4  h-full w-full gap-4  place-items-center ">
+        <div className="h-full w-full flex justify-center border-r-2 ">
+          <Link
+            to="/"
+           
+          >
+            <img
+              src="logover3.png"
+              className=" mt-4 xl:mt-0 w-[200px] h-[123.27px] "
+            />
+          </Link>
+        </div>
+        <div className="h-full w-full flex flex-col gap-[31px] items-center border-r-2 p-12">
+          <div className="flex w-full">
+            <h1 className="text-[20px] text-white">Direct Link</h1>
+          </div>
+          <div className="grid grid-cols-2 w-full">
+            <div className="flex flex-col gap-4">
+              <h1 className="text-[#8CBF3F] text-[20px]">Category</h1>
+              <ul className="flex flex-col gap-4 w-full text-white">
+                <li>
+                  <Link to="/" className="hover:border-b-2">Home</Link>
+                </li>
+                <li>
+                  <Link to="/About" className="hover:border-b-2">About</Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:border-b-2">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:border-b-2">Contact</Link>
+                </li>
+              </ul>
             </div>
-        </footer>
-    );
+            <div className="flex flex-col gap-4">
+              <h1 className="text-[#8CBF3F] text-[20px]">Services</h1>
+              <ul className="flex flex-col gap-4 w-full text-white">
+                <li>
+                  {" "}
+                  <Link to="/services/application" className="hover:border-b-2">Applications</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/services/planning" className="hover:border-b-2">Planning</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/services/reporting" className="hover:border-b-2">Reporting</Link>
+                </li>
+                <li>
+                  <Link to="/services/consultancy" className="hover:border-b-2">Consultancy</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="h-full w-full xl:flex items-center p-12 hidden">
+          <div className="flex flex-col h-full w-full gap-12 text-white">
+            <h1 className="text-[20px]">Recent Projects</h1>
+            <div className="flex flex-col gap-4">
+              <div className="">
+                <h1 className="">Project Name/Company Name</h1>
+                <h1>Compliance Monitoring Report (CMR)</h1>
+              </div>
+              <h1 className="text-sm text-[#D5D5D5]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam”
+              </h1>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="">
+                <h1 className="">Project Name/Company Name</h1>
+                <h1>Compliance Monitoring Report (CMR)</h1>
+              </div>
+              <h1 className="text-sm text-[#D5D5D5]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam”
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className="h-full w-full flex items-center  p-12">
+          <div className="flex flex-col gap-12 w-full h-full">
+            <div className="flex gap-2">
+              <div className="flex gap-2 w-full">
+                <MapPin size={36} className="text-[#8CBF3F]" />
+                <div className="flex flex-col w-full ">
+                  <h1 className="text-[#8CBF3F]">Location</h1>
+                  <h1 className="text-[#D5D5D5]">
+                    2nd Floor, Aboitiz Corporate Center, Gov. M. Cuenco Ave,
+                    Cebu, Philippines, 6000 Cebu City
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <Mail size={36} className="text-[#8CBF3F]" />
+              <div className="flex flex-col">
+                <h1 className="text-[#8CBF3F]">Email Us</h1>
+                <h1 className="text-[#D5D5D5]">official@envicomm.org</h1>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <Phone size={36} className="text-[#8CBF3F]" />
+              <div className="flex flex-col">
+                <h1 className="text-[#8CBF3F]">Phone Us</h1>
+                <h1 className="text-[#D5D5D5]">
+                  +63 917 177 3171 
+                </h1>
+                <h1 className="text-[#D5D5D5]"> 032 415-3622</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center w-full text-white px-12">
+        <h1>2023 All rights reserved</h1>
+      </div>
+    </section>
+  );
 }
 
 export default Footer;
