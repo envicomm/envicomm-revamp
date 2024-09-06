@@ -9,17 +9,20 @@ import { Link } from "react-router-dom";
 import { FeedBackPage } from "./new-feedback";
 
 function Home() {
+
+
+  
   return (
     <div className="flex flex-col items-center justify-center w-screen">
       <Hero />
-      <div className="w-full  flex items-center justify-center border-b-4">
+      <div className="w-full  flex items-center justify-center">
         <Cards />
       </div>
-      <div className="flex flex-col gap-24 items-center justify-center w-full h-full p-24">
+      <div className="flex flex-col gap-24 items-center justify-center w-full h-full p-4 xl:p-24">
         <h1 className="font-serif text-darkgreen font-bold lg:text-6xl text-2xl lg:pt-0 pt-20">
           Our Projects
         </h1>
-        <div className="grid grid-cols-3 w-[80%] gap-4  place-items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-3 w-full xl:w-[80%] gap-4 h-full place-items-center">
           <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
             <img
               src="image-1.png"
@@ -29,15 +32,14 @@ function Home() {
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
                 <h2 className="text-xl font-semibold tracking-wide text-center">
-                  Resort and Waterpark Bohol
+                  Resort and Waterpark Project
                 </h2>
-                <p className="dark:text-gray-800">
-                  Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
-                  eget.
+                <p className="dark:text-gray-800 text-center">
+                    Environmental Compliance Certificate - EIS
                 </p>
               </div>
               <Link
-                to={`/projectDetails?name=JPARK ISLAND RESORT AND WATERPARK BOHOL`}
+                to={`/projectDetails?name=RESORT AND WATERPARK PROJECT`}
                 className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-midgreen text-gray-50"
               >
                 Read more
@@ -53,15 +55,14 @@ function Home() {
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
                 <h2 className="text-xl font-semibold tracking-wide text-center">
-                  Mini Hydropower Plant
+                  Hydropower Plant Project
                 </h2>
-                <p className="dark:text-gray-800">
-                  Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
-                  eget.
+                <p className="dark:text-gray-800 text-center">
+                Environmental Compliance Certificate - EIS
                 </p>
               </div>
               <Link
-                to={`/projectDetails?name=MINI HYDROPOWER PLANT`}
+                to={`/projectDetails?name=MINI HYDROPOWER PROJECT`}
                 className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-midgreen text-gray-50"
               >
                 Read more
@@ -77,15 +78,14 @@ function Home() {
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
                 <h2 className="text-xl font-semibold tracking-wide text-center">
-                 Oasis
+                 Residential Building Project
                 </h2>
-                <p className="dark:text-gray-800">
-                  Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
-                  eget.
+                <p className="dark:text-gray-800 text-center">
+                Environmental Performance Report and Management Plan
                 </p>
               </div>
               <Link
-                to={`/projectDetails?name=SAN REMO OASIS`}
+                to={`/projectDetails?name=RESIDENTIAL BUILDING PROJECT`}
                 className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-midgreen text-gray-50"
               >
                 Read more

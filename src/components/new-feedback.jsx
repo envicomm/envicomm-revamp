@@ -11,9 +11,7 @@ export const FeedBackPage = () => {
             <h2 className="text-4xl font-bold">We Value Your Feedback</h2>
             <p className="dark:text-gray-600">
               Thank you for taking the time to share your thoughts with us. Your
-              feedback is important and helps us improve our services. Please
-              let us know what we did well and how we can enhance your
-              experience.
+              feedback is important and helps us improve our services.
             </p>
           </div>
           <div className="xl:p-6 xl:col-span-3">

@@ -1,26 +1,26 @@
 
 export const Projects = [
     {
-        name:"JPARK ISLAND RESORT AND WATERPARK BOHOL",
-        address:"Libaong , Panglao Bohol",
+        name:"RESORT AND WATERPARK PROJECT",
+        address:"Panglao Bohol",
         application:"ECC-EIS",
         status:"approved",
-        description :" Short sample description",
+        description :"The proposed resort water park project will be located in Panglao, Bohol, a short distance from the airport.",
        
     },
     {
-        name:"SAN REMO OASIS",
-        address:"South Road Properties, Cebu",
-        application:"ECC",
+        name:"RESIDENTIAL BUILDING PROJECT",
+        address:"Cebu City",
+        application:"EPRMP",
         status:"approved",
-        description :" Short sample description"
+        description :"This residential project plans to promote local tourism and sustainable development by easing traffic congestion and expanding a current building to accommodate more guest. "
     },
     {
-        name:"MINI HYDROPOWER PLANT",
-        address:"Bacolod, Negros Occidental",
+        name:"MINI HYDROPOWER PROJECT",
+        address:"Negros Occidental",
         application:"ECC-EIS",
         status:"on-going",
-        description :" Short sample description"
+        description :"This mini hydro project is a run-of-river scheme that includes diversion where series of conveyance structures leading to a powerhouse turbines."
     },
     
 ]
