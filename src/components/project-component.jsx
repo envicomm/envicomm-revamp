@@ -10,12 +10,12 @@ export const ProjectDetails = () => {
 
   console.log(name);
   return (
-    <div className="h-screen">
-      <div className="h-[500px] flex items-center justify-center w-full bg-homebg bg-cover bg-center bg-fixed">
-        <h1 className="text-6xl font-bold text-white">{name.name}</h1>
+    <div className="h-screen w-screen">
+      <div className="h-[500px]  p-4 flex items-center justify-center w-full bg-homebg bg-cover bg-center bg-fixed">
+        <h1 className="text-4xl text-center lg:text-left lg:text-6xl  font-bold text-white">{name.name}</h1>
       </div>
-      <div className="flex items-center justify-center p-24">
-        <div className="w-[80%] flex flex-col gap-12">
+      <div className="flex items-center justify-center lg:p-24 ">
+        <div className="p-12  lg:p-0 lg:w-[80%] flex flex-col gap-12">
           <div className="flex flex-col gap-2">
             <h1>{name.address}</h1>
             <h1>{name.application}</h1>
