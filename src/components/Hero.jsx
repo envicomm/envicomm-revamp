@@ -59,7 +59,7 @@ function BannerCarousel() {
           <img
             key={index}
             src={image}
-            className={`absolute inset-0 h-full object-fill transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 h-full w-full object-fill transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
             alt={`Slide ${index + 1}`}
