@@ -43,14 +43,12 @@ function ContactUs() {
                             <h3 className="text-xl sm:text-2xl lg:text-4xl text-[#547326] sm:mb-8 font-medium">
                                 Get in Touch
                             </h3>
-                            <p className="lg:mb-8 text-justify leading-5 sm:leading-7 ">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
+                            
                             <p className="lg:mb-2 flex items-center p-2 sm:p-4">
                                 <MapPin className="mr-2 stroke-[#547326]" /> LOCATION
                             </p>
                             <p className="lg:mb-2 flex items-center p-2 sm:p-4">
-                                2nd Floor Adlawon Corporate Center, Gov. M. Cuenco Ave., Cebu, Philippines, 6000 Cebu City
+                                2nd Floor Aboitiz Corporate Center, Gov. M. Cuenco Ave., Brgy. Kasambagan,  Cebu, Philippines, 6000 Cebu City
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
@@ -63,10 +61,10 @@ function ContactUs() {
                                     <p>EMAIL US</p>
                                 </div>
                                 <div className="flex items-center justify-center sm:justify-start p-2 sm:p-4">
-                                    <p>+63 917 777 7777 or +632 654 3022</p>
+                                    <p>0917-177-3171 or +032 401-0827</p>
                                 </div>
                                 <div className="flex items-center justify-center sm:justify-start p-2 sm:p-4">
-                                    <p>office@sampleemail.org</p>
+                                    <p>official@envicomm.org</p>
                                 </div>
                             </div>
                         </div>
