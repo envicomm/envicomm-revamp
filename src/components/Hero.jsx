@@ -26,7 +26,7 @@ function BannerCarousel() {
   }, [images.length]);
 
   return (
-    <div className="h-[80vh] sm:h-[70vh] md:h-[80vh] grid grid-cols-1 lg:grid-cols-2 ">
+    <div className="h-[80vh] sm:h-[70vh] md:min-h-screen w-screen grid grid-cols-1 lg:grid-cols-2 ">
       {/* Carousel Background */}
     
       {/* Blurred White Overlay */}
@@ -34,7 +34,7 @@ function BannerCarousel() {
       {/* Banner Content */}
       <div className="flex h-[40vh] lg:h-full w-full flex-col justify-center text-center">
         <div className="flex  flex-col gap-4 w-[100%] items-center justify-center">
-          <h1 className="text-3xl lg:font-extrabold font-bold sm:text-4xl md:text-5xl lg:text-7xl  ">
+          <h1 className="text-3xl lg:font-extrabold font-bold sm:text-4xl lg:text-5xl  ">
             ENVI-COMM CORPORATION
           </h1>
           <h2 className="px-2 text-sm text-darkgreen sm:px-4 sm:text-base md:px-8 md:text-lg">
