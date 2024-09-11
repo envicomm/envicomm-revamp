@@ -12,7 +12,7 @@ import hero6 from "../assets/hero-6.jpg";
 import { Facebook, Linkedin, Instagram } from "lucide-react";
 
 function BannerCarousel() {
-  const images = [hero2,hero1,  hero3, hero4 ,hero5 ,hero6];
+  const images = [hero2, hero1, hero3, hero4, hero5, hero6];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,7 +28,7 @@ function BannerCarousel() {
   return (
     <div className="h-[80vh] sm:h-[70vh] md:min-h-screen w-screen grid grid-cols-1 lg:grid-cols-2 ">
       {/* Carousel Background */}
-    
+
       {/* Blurred White Overlay */}
 
       {/* Banner Content */}
@@ -48,9 +48,15 @@ function BannerCarousel() {
             Contact Us
           </Link>
           <div className="flex flex-row space-x-7 ">
-            <Facebook className="bg-lightgreen hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
-            <Instagram className="bg-lightgreen  hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
-            <Linkedin className="bg-lightgreen  hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
+            <a href="https://www.facebook.com/envicommcorporation">
+              <Facebook className="bg-lightgreen hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
+            </a>
+            <a href="https://www.instagram.com/envicomm_official/">
+              <Instagram className="bg-lightgreen  hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
+            </a>
+            <a href="https://www.linkedin.com/company/envi-comm-corporation/posts/?feedView=all">
+              <Linkedin className="bg-lightgreen  hover:bg-darkgreen transition duration-300 ease-in-out p-2 text-white rounded-full w-10 h-10" />
+            </a>
           </div>
         </div>
       </div>
@@ -66,7 +72,6 @@ function BannerCarousel() {
           />
         ))}
       </div>
-
     </div>
   );
 }
