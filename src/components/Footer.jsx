@@ -7,10 +7,7 @@ function Footer() {
     <section className="xl:h-full w-full bg-[#404041] flex flex-col  items-center justify-center xl:pt-12 gap-4">
       <div className="grid grid-cols-1 xl:grid-cols-4  h-full w-full gap-4  place-items-center ">
         <div className="h-full w-full flex justify-center border-r-2 ">
-          <Link
-            to="/"
-           
-          >
+          <Link to="/">
             <img
               src="logover3.png"
               className=" mt-4 xl:mt-0 w-[200px] h-[123.27px] "
@@ -26,16 +23,24 @@ function Footer() {
               <h1 className="text-[#8CBF3F] text-[20px]">Category</h1>
               <ul className="flex flex-col gap-4 w-full text-white">
                 <li>
-                  <Link to="/" className="hover:border-b-2">Home</Link>
+                  <Link to="/" className="hover:border-b-2">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="hover:border-b-2">About</Link>
+                  <Link to="/About" className="hover:border-b-2">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:border-b-2">Services</Link>
+                  <Link to="/Services" className="hover:border-b-2">
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="hover:border-b-2">Contact</Link>
+                  <Link to="/contact" className="hover:border-b-2">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -44,18 +49,26 @@ function Footer() {
               <ul className="flex flex-col gap-4 w-full text-white">
                 <li>
                   {" "}
-                  <Link to="/services/application" className="hover:border-b-2">Applications</Link>
+                  <Link to="/services/application" className="hover:border-b-2">
+                    Applications
+                  </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/services/planning" className="hover:border-b-2">Planning</Link>
+                  <Link to="/services/planning" className="hover:border-b-2">
+                    Planning
+                  </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/services/reporting" className="hover:border-b-2">Reporting</Link>
+                  <Link to="/services/reporting" className="hover:border-b-2">
+                    Reporting
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services/consultancy" className="hover:border-b-2">Consultancy</Link>
+                  <Link to="/services/consultancy" className="hover:border-b-2">
+                    Consultancy
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -67,23 +80,43 @@ function Footer() {
             <div className="flex flex-col gap-4">
               <div className="">
                 <h1 className="">Project Name/Company Name</h1>
-                <h1>Compliance Monitoring Report (CMR)</h1>
+                <Link
+                  to={`/projectDetails?name=RESORT AND WATERPARK PROJECT`}
+                  className=" hover:border-b-2"
+                >
+                  Resort and Waterpark Project
+                </Link>
               </div>
               <h1 className="text-sm text-[#D5D5D5]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam”
+                Environmental Compliance Certificate - EIS
               </h1>
             </div>
             <div className="flex flex-col gap-4">
               <div className="">
                 <h1 className="">Project Name/Company Name</h1>
-                <h1>Compliance Monitoring Report (CMR)</h1>
+                <Link
+                  to={`/projectDetails?name=MINI HYDROPOWER PROJECT`}
+                  className=" hover:border-b-2"
+                >
+                  Hydropower Plant Project
+                </Link>
               </div>
               <h1 className="text-sm text-[#D5D5D5]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam”
+                Environmental Compliance Certificate - EIS
+              </h1>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="">
+                <h1 className="">Project Name/Company Name</h1>
+                <Link
+                   to={`/projectDetails?name=RESIDENTIAL BUILDING PROJECT`}
+                  className=" hover:border-b-2"
+                >
+                  Residential Building Project
+                </Link>
+              </div>
+              <h1 className="text-sm text-[#D5D5D5]">
+                Environmental Performance Report and Management Plan
               </h1>
             </div>
           </div>
@@ -113,9 +146,7 @@ function Footer() {
               <Phone size={36} className="text-[#8CBF3F]" />
               <div className="flex flex-col">
                 <h1 className="text-[#8CBF3F]">Phone Us</h1>
-                <h1 className="text-[#D5D5D5]">
-                  +63 917 177 3171 
-                </h1>
+                <h1 className="text-[#D5D5D5]">+63 917 177 3171</h1>
                 <h1 className="text-[#D5D5D5]"> 032 415-3622</h1>
               </div>
             </div>
