@@ -147,7 +147,7 @@ function Footer() {
               <div className="flex flex-col">
                 <h1 className="text-[#8CBF3F]">Phone Us</h1>
                 <h1 className="text-[#D5D5D5]">+63 917 177 3171</h1>
-                <h1 className="text-[#D5D5D5]"> 032 415-3622</h1>
+                <h1 className="text-[#D5D5D5]"> +032 401-0827</h1>
               </div>
             </div>
           </div>
