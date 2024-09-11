@@ -36,7 +36,7 @@ function ContactUs() {
                         ></iframe>
 
                         {/* Contact Information */}
-                        <div className="sm:justify-start text-sm sm:text-base items-center text-center sm:text-left">
+                        <div className="sm:justify-start text-sm sm:text-base items-center text-center sm:text-left p-4">
                             <h2 className="text-lg sm:text-xl lg:text-2xl text-[#547326] mb-2 font-normal">
                                 We're ready to serve.
                             </h2>
@@ -75,7 +75,7 @@ function ContactUs() {
                 </div>
             </div>
 
-            <div className='  max-w-4xl mx-auto p-4 rounded-lg shadow-md pt-[150px] '>
+            <div className='lg:max-w-4xl w-full mx-auto p-8 rounded-lg shadow-md pt-[150px] '>
                 <h1 className='text-normal font-normal mb-4 text-center text-black'>Contact us now!</h1>
                 <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-center text-black">Write a Message</h3>
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-4">

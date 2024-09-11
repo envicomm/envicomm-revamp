@@ -10,7 +10,7 @@ export const ProjectDetails = () => {
 
   console.log(name);
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen pb-8">
       <div className="h-[500px]  p-4 flex items-center justify-center w-full bg-homebg bg-cover bg-center bg-fixed">
         <h1 className="text-4xl text-center lg:text-left lg:text-6xl  font-bold text-white">{name.name}</h1>
       </div>
