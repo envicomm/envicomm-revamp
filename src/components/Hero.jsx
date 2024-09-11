@@ -26,14 +26,14 @@ function BannerCarousel() {
   }, [images.length]);
 
   return (
-    <div className="h-[80vh] sm:h-[70vh] md:h-[80vh] lg:h-[100vh] w-full  grid grid-cols-1 lg:grid-cols-2 ">
+    <div className="h-[80vh] sm:h-[70vh] md:h-[80vh] grid grid-cols-1 lg:grid-cols-2 ">
       {/* Carousel Background */}
     
       {/* Blurred White Overlay */}
 
       {/* Banner Content */}
-      <div className="flex bg-white  h-full  w-full flex-col justify-center text-center">
-        <div className="flex flex-col gap-4 w-[100%] items-center justify-center">
+      <div className="flex h-[40vh] lg:h-full w-full flex-col justify-center text-center">
+        <div className="flex  flex-col gap-4 w-[100%] items-center justify-center">
           <h1 className="text-3xl lg:font-extrabold font-bold sm:text-4xl md:text-5xl lg:text-7xl  ">
             ENVI-COMM CORPORATION
           </h1>
@@ -54,12 +54,12 @@ function BannerCarousel() {
           </div>
         </div>
       </div>
-      <div className="relative bg-black inset-0 z-0">
+      <div className="relative h-[40vh] md:h-full inset-0 z-0  ">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
-            className={`absolute inset-0 h-full w-full  object-fill transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 h-full object-fill transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
             alt={`Slide ${index + 1}`}
