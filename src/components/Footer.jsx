@@ -79,7 +79,6 @@ function Footer() {
             <h1 className="text-[20px]">Recent Projects</h1>
             <div className="flex flex-col gap-4">
               <div className="">
-                <h1 className="">Project Name/Company Name</h1>
                 <Link
                   to={`/projectDetails?name=RESORT AND WATERPARK PROJECT`}
                   className=" hover:border-b-2"
@@ -93,7 +92,6 @@ function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="">
-                <h1 className="">Project Name/Company Name</h1>
                 <Link
                   to={`/projectDetails?name=MINI HYDROPOWER PROJECT`}
                   className=" hover:border-b-2"
@@ -107,9 +105,8 @@ function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="">
-                <h1 className="">Project Name/Company Name</h1>
                 <Link
-                   to={`/projectDetails?name=RESIDENTIAL BUILDING PROJECT`}
+                  to={`/projectDetails?name=RESIDENTIAL BUILDING PROJECT`}
                   className=" hover:border-b-2"
                 >
                   Residential Building Project
