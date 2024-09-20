@@ -21,14 +21,14 @@ function App() {
   const [count, setCount] = useState(0);
   const scrollAreaRef = useRef(null);
   return (
-    <div className="h-screen w-screen overflow-hidden ">
+    <div className="h-screen w-screen overflow-hidden font-['Poppins']  ">
       <Router>
         <ScrollToTop scrollAreaRef={scrollAreaRef} />
         <div className="h-full">
           <Nav />
 
-          <ScrollArea className=" h-[calc(100%-80px)]">
-            <div className=""  ref={scrollAreaRef}>
+          <ScrollArea className="  h-[calc(100%-100px)]">
+            <div className="relative" ref={scrollAreaRef}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
@@ -38,9 +38,12 @@ function App() {
                 <Route path="/services/planning" element={<Planning />} />
                 <Route path="/services/reporting" element={<Reporting />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path ="/projectDetails" element={<ProjectDetails/>}/>
+                <Route path="/projectDetails" element={<ProjectDetails />} />
               </Routes>
-              <div className="w-full h-[679px] bg-black">
+              <div className="z-10 absolute bottom-0 w-full h-[231px] md:h-[250px] lg:h-[325px]  xl:h-[380px] flex items-center justify-center">
+                {/* Background layer with opacity */}
+                <div className="absolute inset-0 bg-[#3B444B] h-full w-full opacity-50"></div>
+
                 <Footer />
               </div>
             </div>

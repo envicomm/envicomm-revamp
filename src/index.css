@@ -57,6 +57,13 @@
   }
 }
 @layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Poppins-Regular.ttf) format('ttf');
+  }
   * {
     @apply border-border;
   }
@@ -65,5 +72,11 @@
   }
 }
 
-
-
+.hero-background {
+  background-image: url('../public/Employees.png'); /* Correct way to set background image */
+  background-size: contain; /* Adjusts image to fit within the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  width: 100%; /* Make sure the container spans the full width */
+  height:100%; /* Or set a specific height */
+}
