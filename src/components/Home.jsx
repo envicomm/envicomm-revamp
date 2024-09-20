@@ -229,11 +229,11 @@ function Home() {
       </div>
       <div className="relative w-full h-[calc(100vh-100px)] flex items-center justify-center">
         <div className="relative pt-28 md:pt-32 lg:p-0 w-full h-full">
-          <img src="4K-model.png" className="object-cover object-[60%_100%] md:object-[70%_100%] lg:object-[50%_100%]  h-full w-full" />
+          <img src="4K-model.png" className="object-cover object-[60%_100%] md:object-[60%_100%] lg:object-[50%_100%]  h-full w-full" />
         </div>
 
         <div className="absolute w-[90%] md:w-[62%] flex h-full justify-center lg:justify-start ">
-          <div className="flex flex-col gap-4 items-center  ">
+          <div className="flex flex-col gap-4 items-center lg:mt-36 4k:mt-0  ">
             <div className="flex flex-col text-center ">
               <h1 className="text-[#0e1111] text-[30px] md:text-[45px] 4xl:text-6xl 4xl:mt-24 font-medium font-['Poppins'] 4k:text-6xl">
                 Get Our Updates

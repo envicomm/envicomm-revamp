@@ -40,7 +40,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projectDetails" element={<ProjectDetails />} />
               </Routes>
-              <div className="z-10 absolute bottom-0 w-full h-[231px] md:h-[250px] lg:h-[325px]  xl:h-[380px] flex items-center justify-center">
+              <div className="z-10 absolute bottom-0 w-full h-[220px] md:h-[250px] lg:h-[325px]  xl:h-[380px] flex items-center justify-center">
                 {/* Background layer with opacity */}
                 <div className="absolute inset-0 bg-[#3B444B] h-full w-full opacity-50"></div>
 
